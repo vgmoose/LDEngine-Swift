@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftHello/GameScene.swift"
+            timestampString = "465278313.220841"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "GameScene"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftHello.GameScene.__deallocating_deinit"
+                  moduleName = "SwiftHello"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ricky/Downloads/heiw/SwiftHello/SwiftHello/GameScene.swift"
+                  timestampString = "465278368.764437"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftHello.GameScene.init (SwiftHello.GameScene.Type)(size : C.CGSize) -&gt; SwiftHello.GameScene"
+                  moduleName = "SwiftHello"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ricky/Downloads/heiw/SwiftHello/SwiftHello/GameScene.swift"
+                  timestampString = "465278368.767667"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftHello.GameScene.init (SwiftHello.GameScene.Type)() -&gt; SwiftHello.GameScene"
+                  moduleName = "SwiftHello"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ricky/Downloads/heiw/SwiftHello/SwiftHello/GameScene.swift"
+                  timestampString = "465278368.767954"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftHello.GameScene.init (SwiftHello.GameScene.Type)(coder : ObjectiveC.NSCoder) -&gt; Swift.Optional&lt;SwiftHello.GameScene&gt;"
+                  moduleName = "SwiftHello"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ricky/Downloads/heiw/SwiftHello/SwiftHello/GameScene.swift"
+                  timestampString = "465278368.768171"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftHello/LDCharacter.swift"
+            timestampString = "465285333.91649"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "init(name:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
