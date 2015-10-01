@@ -13,12 +13,13 @@ class LDCharacter : SKSpriteNode
 {
     var direction = "down"
     var counter = 1
-    var playerAtlas: SKTextureAtlas
+    var charAtlas: SKTextureAtlas
+    var spunk = 30
     
     required init(name charName: String)
     {
-        playerAtlas = SKTextureAtlas(named: charName)
-        let texture = playerAtlas.textureNamed("down_1")
+        charAtlas = SKTextureAtlas(named: charName)
+        let texture = charAtlas.textureNamed("down_1")
         super.init(texture: texture, color: NSColor.whiteColor(), size: texture.size())
     }
 
@@ -26,37 +27,41 @@ class LDCharacter : SKSpriteNode
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func keyDown(theEvent: NSEvent)
+    func move(moveMatrix: (CGFloat, CGFloat))
     {
-        switch (theEvent.keyCode)
+//        let oldX = self.position.x
+//        let oldY = self.position.y
+        
+        let xDelta = moveMatrix.0
+        let yDelta = moveMatrix.1
+        
+        self.position.x += xDelta
+        self.position.y += yDelta
+        
+        // check for collisions here
+        
+        if (abs(xDelta) > abs(yDelta))
         {
-        case 12:
-            direction = "left"
-            self.position.x -= 5
-            break
-        case 15:
-            direction = "right"
-            self.position.x += 5
-            break
-        case 13:
-            direction = "down"
-            self.position.y -= 5
-            break
-        case 14:
-            direction = "up"
-            self.position.y += 5
-            break
-        default:
-            break
+            direction = (xDelta > 0) ? "right" : "left"
+            advanceSpunk()
+        }
+        else if !(xDelta == 0 && yDelta == 0)
+        {
+            direction = (yDelta > 0) ? "up" : "down"
+            advanceSpunk()
         }
         
-        redraw()
     }
     
     func redraw()
     {
-        counter = (counter+1) % 10
-        let oneOrTwo = (counter < 5) ? 1 : 2
-        self.texture = playerAtlas.textureNamed(direction+"_"+String(oneOrTwo))
+        
+    }
+    
+    func advanceSpunk()
+    {
+        counter = (counter+1) % spunk
+        let oneOrTwo = (counter < spunk/2) ? 1 : 2
+        self.texture = charAtlas.textureNamed(direction+"_"+String(oneOrTwo))
     }
 }

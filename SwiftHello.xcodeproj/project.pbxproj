@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C19D22F1BBCDC7E00863228 /* LDControllableCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C19D22E1BBCDC7E00863228 /* LDControllableCharacter.swift */; };
+		9C9786051BBCB495006646A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9786041BBCB495006646A6 /* Constants.swift */; };
 		9CA33F821BBBA31E00D82255 /* LDCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA33F811BBBA31E00D82255 /* LDCharacter.swift */; };
 		9CF77FBE1BBB9035003C739F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF77FBD1BBB9035003C739F /* AppDelegate.swift */; };
 		9CF77FC01BBB9035003C739F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF77FBF1BBB9035003C739F /* GameScene.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C19D22E1BBCDC7E00863228 /* LDControllableCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDControllableCharacter.swift; sourceTree = "<group>"; };
+		9C9786041BBCB495006646A6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9CA33F811BBBA31E00D82255 /* LDCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDCharacter.swift; sourceTree = "<group>"; };
 		9CF77FBA1BBB9035003C739F /* SwiftHello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftHello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF77FBD1BBB9035003C739F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,10 +63,12 @@
 				9CF77FBD1BBB9035003C739F /* AppDelegate.swift */,
 				9CF77FBF1BBB9035003C739F /* GameScene.swift */,
 				9CA33F811BBBA31E00D82255 /* LDCharacter.swift */,
+				9C19D22E1BBCDC7E00863228 /* LDControllableCharacter.swift */,
 				9CF77FC11BBB9035003C739F /* GameScene.sks */,
 				9CF77FC31BBB9035003C739F /* Assets.xcassets */,
 				9CF77FC51BBB9035003C739F /* MainMenu.xib */,
 				9CF77FC81BBB9035003C739F /* Info.plist */,
+				9C9786041BBCB495006646A6 /* Constants.swift */,
 			);
 			path = SwiftHello;
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 				9CF77FC01BBB9035003C739F /* GameScene.swift in Sources */,
 				9CF77FBE1BBB9035003C739F /* AppDelegate.swift in Sources */,
 				9CA33F821BBBA31E00D82255 /* LDCharacter.swift in Sources */,
+				9C19D22F1BBCDC7E00863228 /* LDControllableCharacter.swift in Sources */,
+				9C9786051BBCB495006646A6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
