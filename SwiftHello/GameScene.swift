@@ -22,7 +22,7 @@ class GameScene: SKScene {
         self.myLabel.zPosition = 99
         self.myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
         
-        self.addChild(self.myLabel)
+//        self.addChild(self.myLabel)
         
         playerSprite.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
 
@@ -35,16 +35,16 @@ class GameScene: SKScene {
         
         let location = theEvent.locationInNode(self)
         
-        let sprite = SKSpriteNode(imageNamed:"Spaceship")
-        sprite.position = location;
-        sprite.setScale(0.5)
-        
-        let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-        sprite.runAction(SKAction.repeatActionForever(action), withKey:"spin")
-        
-        self.myLabel.text = String(self.children.count)
-        
-        self.addChild(sprite)
+//        let sprite = SKSpriteNode(imageNamed:"Spaceship")
+//        sprite.position = location;
+//        sprite.setScale(0.5)
+//        
+//        let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
+//        sprite.runAction(SKAction.repeatActionForever(action), withKey:"spin")
+//        
+//        self.myLabel.text = String(self.children.count)
+//        
+//        self.addChild(sprite)
     }
     
     override func keyDown(theEvent: NSEvent)

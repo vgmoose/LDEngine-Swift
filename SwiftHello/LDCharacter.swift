@@ -28,15 +28,26 @@ class LDCharacter : SKSpriteNode
     
     override func keyDown(theEvent: NSEvent)
     {
-        if (theEvent.keyCode == 12)
+        switch (theEvent.keyCode)
         {
-            direction = "up"
-            self.position.y += 5
-        }
-        else
-        {
+        case 12:
+            direction = "left"
+            self.position.x -= 5
+            break
+        case 15:
+            direction = "right"
+            self.position.x += 5
+            break
+        case 13:
             direction = "down"
             self.position.y -= 5
+            break
+        case 14:
+            direction = "up"
+            self.position.y += 5
+            break
+        default:
+            break
         }
         
         redraw()
