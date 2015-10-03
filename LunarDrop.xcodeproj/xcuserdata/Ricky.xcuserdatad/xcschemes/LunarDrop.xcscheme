@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9CF77FB91BBB9035003C739F"
-               BuildableName = "SwiftHello.app"
-               BlueprintName = "SwiftHello"
+               BuildableName = "LunarDrop.app"
+               BlueprintName = "LunarDrop"
                ReferencedContainer = "container:SwiftHello.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9CF77FB91BBB9035003C739F"
-            BuildableName = "SwiftHello.app"
-            BlueprintName = "SwiftHello"
-            ReferencedContainer = "container:SwiftHello.xcodeproj">
+            BuildableName = "LunarDrop.app"
+            BlueprintName = "LunarDrop"
+            ReferencedContainer = "container:LunarDrop.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9CF77FB91BBB9035003C739F"
-            BuildableName = "SwiftHello.app"
-            BlueprintName = "SwiftHello"
-            ReferencedContainer = "container:SwiftHello.xcodeproj">
+            BuildableName = "LunarDrop.app"
+            BlueprintName = "LunarDrop"
+            ReferencedContainer = "container:LunarDrop.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9CF77FB91BBB9035003C739F"
-            BuildableName = "SwiftHello.app"
-            BlueprintName = "SwiftHello"
+            BuildableName = "LunarDrop.app"
+            BlueprintName = "LunarDrop"
             ReferencedContainer = "container:SwiftHello.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

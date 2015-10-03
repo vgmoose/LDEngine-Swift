@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9C19D22F1BBCDC7E00863228 /* LDControllableCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C19D22E1BBCDC7E00863228 /* LDControllableCharacter.swift */; };
+		9C5F9F691BBF5FFB00F8A645 /* LDTimeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */; };
 		9C9786051BBCB495006646A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9786041BBCB495006646A6 /* Constants.swift */; };
 		9CA33F821BBBA31E00D82255 /* LDCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA33F811BBBA31E00D82255 /* LDCharacter.swift */; };
 		9CF77FBE1BBB9035003C739F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF77FBD1BBB9035003C739F /* AppDelegate.swift */; };
@@ -19,9 +20,10 @@
 
 /* Begin PBXFileReference section */
 		9C19D22E1BBCDC7E00863228 /* LDControllableCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDControllableCharacter.swift; sourceTree = "<group>"; };
+		9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDTimeSlider.swift; sourceTree = "<group>"; };
 		9C9786041BBCB495006646A6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9CA33F811BBBA31E00D82255 /* LDCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDCharacter.swift; sourceTree = "<group>"; };
-		9CF77FBA1BBB9035003C739F /* SwiftHello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftHello.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF77FBA1BBB9035003C739F /* LunarDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunarDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF77FBD1BBB9035003C739F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CF77FBF1BBB9035003C739F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		9CF77FC11BBB9035003C739F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -44,7 +46,7 @@
 		9CF77FB11BBB9035003C739F = {
 			isa = PBXGroup;
 			children = (
-				9CF77FBC1BBB9035003C739F /* SwiftHello */,
+				9CF77FBC1BBB9035003C739F /* LunarDrop */,
 				9CF77FBB1BBB9035003C739F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +54,12 @@
 		9CF77FBB1BBB9035003C739F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CF77FBA1BBB9035003C739F /* SwiftHello.app */,
+				9CF77FBA1BBB9035003C739F /* LunarDrop.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9CF77FBC1BBB9035003C739F /* SwiftHello */ = {
+		9CF77FBC1BBB9035003C739F /* LunarDrop */ = {
 			isa = PBXGroup;
 			children = (
 				9CF77FBD1BBB9035003C739F /* AppDelegate.swift */,
@@ -69,16 +71,17 @@
 				9CF77FC51BBB9035003C739F /* MainMenu.xib */,
 				9CF77FC81BBB9035003C739F /* Info.plist */,
 				9C9786041BBCB495006646A6 /* Constants.swift */,
+				9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */,
 			);
-			path = SwiftHello;
+			path = LunarDrop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9CF77FB91BBB9035003C739F /* SwiftHello */ = {
+		9CF77FB91BBB9035003C739F /* LunarDrop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CF77FCB1BBB9035003C739F /* Build configuration list for PBXNativeTarget "SwiftHello" */;
+			buildConfigurationList = 9CF77FCB1BBB9035003C739F /* Build configuration list for PBXNativeTarget "LunarDrop" */;
 			buildPhases = (
 				9CF77FB61BBB9035003C739F /* Sources */,
 				9CF77FB71BBB9035003C739F /* Frameworks */,
@@ -88,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftHello;
+			name = LunarDrop;
 			productName = SwiftHello;
-			productReference = 9CF77FBA1BBB9035003C739F /* SwiftHello.app */;
+			productReference = 9CF77FBA1BBB9035003C739F /* LunarDrop.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -107,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9CF77FB51BBB9035003C739F /* Build configuration list for PBXProject "SwiftHello" */;
+			buildConfigurationList = 9CF77FB51BBB9035003C739F /* Build configuration list for PBXProject "LunarDrop" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -120,7 +123,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9CF77FB91BBB9035003C739F /* SwiftHello */,
+				9CF77FB91BBB9035003C739F /* LunarDrop */,
 			);
 		};
 /* End PBXProject section */
@@ -148,6 +151,7 @@
 				9CA33F821BBBA31E00D82255 /* LDCharacter.swift in Sources */,
 				9C19D22F1BBCDC7E00863228 /* LDControllableCharacter.swift in Sources */,
 				9C9786051BBCB495006646A6 /* Constants.swift in Sources */,
+				9C5F9F691BBF5FFB00F8A645 /* LDTimeSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +254,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SwiftHello/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LunarDrop/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vgmoose.SwiftHello;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vgmoose.LunarDrop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -262,9 +266,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SwiftHello/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LunarDrop/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vgmoose.SwiftHello;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vgmoose.LunarDrop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -272,7 +276,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9CF77FB51BBB9035003C739F /* Build configuration list for PBXProject "SwiftHello" */ = {
+		9CF77FB51BBB9035003C739F /* Build configuration list for PBXProject "LunarDrop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CF77FC91BBB9035003C739F /* Debug */,
@@ -281,7 +285,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CF77FCB1BBB9035003C739F /* Build configuration list for PBXNativeTarget "SwiftHello" */ = {
+		9CF77FCB1BBB9035003C739F /* Build configuration list for PBXNativeTarget "LunarDrop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CF77FCC1BBB9035003C739F /* Debug */,
