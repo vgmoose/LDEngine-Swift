@@ -19,6 +19,7 @@ class GameScene: SKScene {
         self.addChild(playerSprite)
     }
     
+    #if !os(iOS)
     override func keyDown(theEvent: NSEvent)
     {
         playerSprite.keyDown(theEvent)
@@ -28,6 +29,7 @@ class GameScene: SKScene {
     {
         playerSprite.keyUp(theEvent)
     }
+    #endif
     
     override func update(currentTime: CFTimeInterval)
     {

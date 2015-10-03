@@ -14,6 +14,7 @@ class LDControllableCharacter : LDCharacter
     var mySpeed: CGFloat = 1
     var keys:[Int] = []
     
+    #if !os(iOS)
     override func keyDown(theEvent: NSEvent)
     {
         let key = Int(theEvent.keyCode)
@@ -31,6 +32,7 @@ class LDControllableCharacter : LDCharacter
             keys.removeAtIndex(keys.indexOf(key)!)
         }
     }
+    #endif
     
     override func redraw()
     {

@@ -7,10 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C155D671BC0638D00C74FD7 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C155D661BC0638D00C74FD7 /* GameViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9C155D681BC0648600C74FD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF77FC31BBB9035003C739F /* Assets.xcassets */; };
+		9C155D691BC0648600C74FD7 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9CF77FC11BBB9035003C739F /* GameScene.sks */; };
+		9C155D6A1BC064BB00C74FD7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF77FBF1BBB9035003C739F /* GameScene.swift */; };
+		9C155D6B1BC064BB00C74FD7 /* LDCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA33F811BBBA31E00D82255 /* LDCharacter.swift */; };
+		9C155D6C1BC064BB00C74FD7 /* LDControllableCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C19D22E1BBCDC7E00863228 /* LDControllableCharacter.swift */; };
+		9C155D6D1BC064BB00C74FD7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9786041BBCB495006646A6 /* Constants.swift */; };
+		9C155D6E1BC064BB00C74FD7 /* LDTimeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */; };
+		9C155D701BC0652000C74FD7 /* NSEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C155D6F1BC0652000C74FD7 /* NSEvent.swift */; settings = {ASSET_TAGS = (); }; };
 		9C19D22F1BBCDC7E00863228 /* LDControllableCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C19D22E1BBCDC7E00863228 /* LDControllableCharacter.swift */; };
 		9C5F9F691BBF5FFB00F8A645 /* LDTimeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */; };
 		9C9786051BBCB495006646A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9786041BBCB495006646A6 /* Constants.swift */; };
 		9CA33F821BBBA31E00D82255 /* LDCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA33F811BBBA31E00D82255 /* LDCharacter.swift */; };
+		9CE36B5A1BC04985009842E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE36B591BC04985009842E8 /* AppDelegate.swift */; };
+		9CE36B631BC04985009842E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE36B611BC04985009842E8 /* Main.storyboard */; };
+		9CE36B681BC04985009842E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE36B661BC04985009842E8 /* LaunchScreen.storyboard */; };
 		9CF77FBE1BBB9035003C739F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF77FBD1BBB9035003C739F /* AppDelegate.swift */; };
 		9CF77FC01BBB9035003C739F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF77FBF1BBB9035003C739F /* GameScene.swift */; };
 		9CF77FC21BBB9035003C739F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9CF77FC11BBB9035003C739F /* GameScene.sks */; };
@@ -19,20 +31,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9C19D22E1BBCDC7E00863228 /* LDControllableCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDControllableCharacter.swift; sourceTree = "<group>"; };
-		9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDTimeSlider.swift; sourceTree = "<group>"; };
-		9C9786041BBCB495006646A6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		9CA33F811BBBA31E00D82255 /* LDCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDCharacter.swift; sourceTree = "<group>"; };
+		9C155D661BC0638D00C74FD7 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		9C155D6F1BC0652000C74FD7 /* NSEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSEvent.swift; sourceTree = "<group>"; };
+		9C19D22E1BBCDC7E00863228 /* LDControllableCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDControllableCharacter.swift; path = LunarDrop/LDControllableCharacter.swift; sourceTree = "<group>"; };
+		9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDTimeSlider.swift; path = LunarDrop/LDTimeSlider.swift; sourceTree = "<group>"; };
+		9C9786041BBCB495006646A6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = LunarDrop/Constants.swift; sourceTree = "<group>"; };
+		9CA33F811BBBA31E00D82255 /* LDCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDCharacter.swift; path = LunarDrop/LDCharacter.swift; sourceTree = "<group>"; };
+		9CE36B571BC04985009842E8 /* LunarDropiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunarDropiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CE36B591BC04985009842E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CE36B621BC04985009842E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CE36B671BC04985009842E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9CE36B691BC04985009842E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CF77FBA1BBB9035003C739F /* LunarDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunarDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF77FBD1BBB9035003C739F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9CF77FBF1BBB9035003C739F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		9CF77FC11BBB9035003C739F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		9CF77FC31BBB9035003C739F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CF77FBF1BBB9035003C739F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = LunarDrop/GameScene.swift; sourceTree = "<group>"; };
+		9CF77FC11BBB9035003C739F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameScene.sks; path = LunarDrop/GameScene.sks; sourceTree = "<group>"; };
+		9CF77FC31BBB9035003C739F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = LunarDrop/Assets.xcassets; sourceTree = "<group>"; };
 		9CF77FC61BBB9035003C739F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9CF77FC81BBB9035003C739F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9CE36B541BC04985009842E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CF77FB71BBB9035003C739F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,10 +69,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C155D651BC05E1D00C74FD7 /* LunarDrop */ = {
+			isa = PBXGroup;
+			children = (
+				9CF77FC31BBB9035003C739F /* Assets.xcassets */,
+				9CF77FBF1BBB9035003C739F /* GameScene.swift */,
+				9CA33F811BBBA31E00D82255 /* LDCharacter.swift */,
+				9C19D22E1BBCDC7E00863228 /* LDControllableCharacter.swift */,
+				9CF77FC11BBB9035003C739F /* GameScene.sks */,
+				9C9786041BBCB495006646A6 /* Constants.swift */,
+				9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */,
+			);
+			name = LunarDrop;
+			sourceTree = "<group>";
+		};
+		9CE36B581BC04985009842E8 /* LunarDropiOS */ = {
+			isa = PBXGroup;
+			children = (
+				9CE36B591BC04985009842E8 /* AppDelegate.swift */,
+				9CE36B611BC04985009842E8 /* Main.storyboard */,
+				9C155D661BC0638D00C74FD7 /* GameViewController.swift */,
+				9CE36B661BC04985009842E8 /* LaunchScreen.storyboard */,
+				9CE36B691BC04985009842E8 /* Info.plist */,
+				9C155D6F1BC0652000C74FD7 /* NSEvent.swift */,
+			);
+			path = LunarDropiOS;
+			sourceTree = "<group>";
+		};
 		9CF77FB11BBB9035003C739F = {
 			isa = PBXGroup;
 			children = (
-				9CF77FBC1BBB9035003C739F /* LunarDrop */,
+				9C155D651BC05E1D00C74FD7 /* LunarDrop */,
+				9CF77FBC1BBB9035003C739F /* LunarDropMac */,
+				9CE36B581BC04985009842E8 /* LunarDropiOS */,
 				9CF77FBB1BBB9035003C739F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,30 +110,42 @@
 			isa = PBXGroup;
 			children = (
 				9CF77FBA1BBB9035003C739F /* LunarDrop.app */,
+				9CE36B571BC04985009842E8 /* LunarDropiOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9CF77FBC1BBB9035003C739F /* LunarDrop */ = {
+		9CF77FBC1BBB9035003C739F /* LunarDropMac */ = {
 			isa = PBXGroup;
 			children = (
 				9CF77FBD1BBB9035003C739F /* AppDelegate.swift */,
-				9CF77FBF1BBB9035003C739F /* GameScene.swift */,
-				9CA33F811BBBA31E00D82255 /* LDCharacter.swift */,
-				9C19D22E1BBCDC7E00863228 /* LDControllableCharacter.swift */,
-				9CF77FC11BBB9035003C739F /* GameScene.sks */,
-				9CF77FC31BBB9035003C739F /* Assets.xcassets */,
 				9CF77FC51BBB9035003C739F /* MainMenu.xib */,
 				9CF77FC81BBB9035003C739F /* Info.plist */,
-				9C9786041BBCB495006646A6 /* Constants.swift */,
-				9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */,
 			);
+			name = LunarDropMac;
 			path = LunarDrop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9CE36B561BC04985009842E8 /* LunarDropiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CE36B6A1BC04985009842E8 /* Build configuration list for PBXNativeTarget "LunarDropiOS" */;
+			buildPhases = (
+				9CE36B531BC04985009842E8 /* Sources */,
+				9CE36B541BC04985009842E8 /* Frameworks */,
+				9CE36B551BC04985009842E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LunarDropiOS;
+			productName = LunarDropiOS;
+			productReference = 9CE36B571BC04985009842E8 /* LunarDropiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		9CF77FB91BBB9035003C739F /* LunarDrop */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CF77FCB1BBB9035003C739F /* Build configuration list for PBXNativeTarget "LunarDrop" */;
@@ -105,6 +172,10 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Ricky Ayoub";
 				TargetAttributes = {
+					9CE36B561BC04985009842E8 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = C34C2M7MC7;
+					};
 					9CF77FB91BBB9035003C739F = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -124,11 +195,23 @@
 			projectRoot = "";
 			targets = (
 				9CF77FB91BBB9035003C739F /* LunarDrop */,
+				9CE36B561BC04985009842E8 /* LunarDropiOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9CE36B551BC04985009842E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C155D681BC0648600C74FD7 /* Assets.xcassets in Resources */,
+				9C155D691BC0648600C74FD7 /* GameScene.sks in Resources */,
+				9CE36B681BC04985009842E8 /* LaunchScreen.storyboard in Resources */,
+				9CE36B631BC04985009842E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CF77FB81BBB9035003C739F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,6 +225,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9CE36B531BC04985009842E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C155D6A1BC064BB00C74FD7 /* GameScene.swift in Sources */,
+				9C155D6B1BC064BB00C74FD7 /* LDCharacter.swift in Sources */,
+				9C155D6C1BC064BB00C74FD7 /* LDControllableCharacter.swift in Sources */,
+				9C155D701BC0652000C74FD7 /* NSEvent.swift in Sources */,
+				9C155D6D1BC064BB00C74FD7 /* Constants.swift in Sources */,
+				9C155D6E1BC064BB00C74FD7 /* LDTimeSlider.swift in Sources */,
+				9C155D671BC0638D00C74FD7 /* GameViewController.swift in Sources */,
+				9CE36B5A1BC04985009842E8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CF77FB61BBB9035003C739F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,6 +256,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		9CE36B611BC04985009842E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CE36B621BC04985009842E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9CE36B661BC04985009842E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CE36B671BC04985009842E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		9CF77FC51BBB9035003C739F /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -169,6 +283,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9CE36B6B1BC04985009842E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = LunarDropiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vgmoose.LunarDropiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CE36B6C1BC04985009842E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = LunarDropiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vgmoose.LunarDropiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		9CF77FC91BBB9035003C739F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -276,6 +426,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9CE36B6A1BC04985009842E8 /* Build configuration list for PBXNativeTarget "LunarDropiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CE36B6B1BC04985009842E8 /* Debug */,
+				9CE36B6C1BC04985009842E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9CF77FB51BBB9035003C739F /* Build configuration list for PBXProject "LunarDrop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
