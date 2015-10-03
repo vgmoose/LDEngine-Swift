@@ -15,7 +15,6 @@
 		9C155D6C1BC064BB00C74FD7 /* LDControllableCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C19D22E1BBCDC7E00863228 /* LDControllableCharacter.swift */; };
 		9C155D6D1BC064BB00C74FD7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9786041BBCB495006646A6 /* Constants.swift */; };
 		9C155D6E1BC064BB00C74FD7 /* LDTimeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */; };
-		9C155D701BC0652000C74FD7 /* NSEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C155D6F1BC0652000C74FD7 /* NSEvent.swift */; settings = {ASSET_TAGS = (); }; };
 		9C19D22F1BBCDC7E00863228 /* LDControllableCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C19D22E1BBCDC7E00863228 /* LDControllableCharacter.swift */; };
 		9C5F9F691BBF5FFB00F8A645 /* LDTimeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */; };
 		9C9786051BBCB495006646A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9786041BBCB495006646A6 /* Constants.swift */; };
@@ -32,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		9C155D661BC0638D00C74FD7 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		9C155D6F1BC0652000C74FD7 /* NSEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSEvent.swift; sourceTree = "<group>"; };
 		9C19D22E1BBCDC7E00863228 /* LDControllableCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDControllableCharacter.swift; path = LunarDrop/LDControllableCharacter.swift; sourceTree = "<group>"; };
 		9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDTimeSlider.swift; path = LunarDrop/LDTimeSlider.swift; sourceTree = "<group>"; };
 		9C9786041BBCB495006646A6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = LunarDrop/Constants.swift; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 				9C155D661BC0638D00C74FD7 /* GameViewController.swift */,
 				9CE36B661BC04985009842E8 /* LaunchScreen.storyboard */,
 				9CE36B691BC04985009842E8 /* Info.plist */,
-				9C155D6F1BC0652000C74FD7 /* NSEvent.swift */,
 			);
 			path = LunarDropiOS;
 			sourceTree = "<group>";
@@ -122,8 +119,7 @@
 				9CF77FC51BBB9035003C739F /* MainMenu.xib */,
 				9CF77FC81BBB9035003C739F /* Info.plist */,
 			);
-			name = LunarDropMac;
-			path = LunarDrop;
+			path = LunarDropMac;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +228,6 @@
 				9C155D6A1BC064BB00C74FD7 /* GameScene.swift in Sources */,
 				9C155D6B1BC064BB00C74FD7 /* LDCharacter.swift in Sources */,
 				9C155D6C1BC064BB00C74FD7 /* LDControllableCharacter.swift in Sources */,
-				9C155D701BC0652000C74FD7 /* NSEvent.swift in Sources */,
 				9C155D6D1BC064BB00C74FD7 /* Constants.swift in Sources */,
 				9C155D6E1BC064BB00C74FD7 /* LDTimeSlider.swift in Sources */,
 				9C155D671BC0638D00C74FD7 /* GameViewController.swift in Sources */,
@@ -404,7 +399,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/LunarDrop/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/LunarDropMac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vgmoose.LunarDrop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,7 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/LunarDrop/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/LunarDropMac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vgmoose.LunarDrop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
