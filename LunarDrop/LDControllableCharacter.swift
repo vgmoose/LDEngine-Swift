@@ -14,25 +14,26 @@ class LDControllableCharacter : LDCharacter
     var mySpeed: CGFloat = 1
     var keys:[Int] = []
     
-    #if !os(iOS)
-    override func keyDown(theEvent: NSEvent)
+    func buttonDown(key: Int)
     {
-        let key = Int(theEvent.keyCode)
         if (!keys.contains(key))
         {
             keys.append(key)
         }
     }
     
-    override func keyUp(theEvent: NSEvent)
+    func buttonUp(key: Int)
     {
-        let key = Int(theEvent.keyCode)
         if (keys.contains(key))
         {
             keys.removeAtIndex(keys.indexOf(key)!)
         }
     }
-    #endif
+    
+    override func touchStart(location: CGPoint)
+    {
+        print(location)
+    }
     
     override func redraw()
     {

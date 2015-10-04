@@ -19,7 +19,6 @@ let RIGHT_KEYCODE = 15
 let DOWN_KEYCODE = 13
 
 #if os(iOS)
-    typealias LDColor = UIColor
 #else
-    typealias LDColor = NSColor
+    typealias UIColor = NSColor
 #endif

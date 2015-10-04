@@ -14,8 +14,8 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <menu title="AMainMenu" systemMenu="main" id="29">
             <items>
-                <menuItem title="SwiftHello" id="56">
-                    <menu key="submenu" title="SwiftHello" systemMenu="apple" id="57">
+                <menuItem title="LunarDrop" id="56">
+                    <menu key="submenu" title="LunarDrop" systemMenu="apple" id="57">
                         <items>
                             <menuItem title="About SwiftHello" id="58">
                                 <modifierMask key="keyEquivalentModifierMask"/>
@@ -124,7 +124,7 @@
                 <animations/>
             </view>
         </window>
-        <customObject id="494" customClass="AppDelegate" customModule="LunarDrop" customModuleProvider="target">
+        <customObject id="494" customClass="AppDelegate" customModule="LunarDropMac" customModuleProvider="target">
             <connections>
                 <outlet property="skView" destination="539" id="540"/>
                 <outlet property="window" destination="371" id="532"/>

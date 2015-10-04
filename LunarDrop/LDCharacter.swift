@@ -9,7 +9,7 @@
 import Foundation
 import SpriteKit
 
-class LDCharacter : SKSpriteNode
+class LDCharacter : LDSpriteNode
 {
     var direction = "down"
     var counter = 1
@@ -20,7 +20,7 @@ class LDCharacter : SKSpriteNode
     {
         charAtlas = SKTextureAtlas(named: charName)
         let texture = charAtlas.textureNamed("down_1")
-        super.init(texture: texture, color: LDColor.whiteColor(), size: texture.size())
+        super.init(initWithTexture: texture, color: UIColor.whiteColor(), size: texture.size())
     }
 
     required init?(coder aDecoder: NSCoder) {

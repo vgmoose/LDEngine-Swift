@@ -8,7 +8,7 @@
 
 import SpriteKit
 
-class GameScene: SKScene {
+class GameScene: LDScene {
 
     let myLabel = SKLabelNode(fontNamed:"Sana Regular")
     let playerSprite = LDControllableCharacter(name: "Link")
@@ -19,17 +19,15 @@ class GameScene: SKScene {
         self.addChild(playerSprite)
     }
     
-    #if !os(iOS)
-    override func keyDown(theEvent: NSEvent)
+    override func buttonDown(key: Int)
     {
-        playerSprite.keyDown(theEvent)
+        playerSprite.buttonDown(key)
     }
     
-    override func keyUp(theEvent: NSEvent)
+    override func buttonUp(key: Int)
     {
-        playerSprite.keyUp(theEvent)
+        playerSprite.buttonUp(key)
     }
-    #endif
     
     override func update(currentTime: CFTimeInterval)
     {
