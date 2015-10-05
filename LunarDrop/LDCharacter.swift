@@ -15,10 +15,12 @@ class LDCharacter : LDSpriteNode
     var counter = 1
     var charAtlas: SKTextureAtlas
     var spunk = 30
+    var world: LDScrollableWorld!
     
     required init(name charName: String)
     {
         charAtlas = SKTextureAtlas(named: charName)
+        
         let texture = charAtlas.textureNamed("down_1")
         super.init(initWithTexture: texture, color: UIColor.whiteColor(), size: texture.size())
     }
@@ -27,7 +29,7 @@ class LDCharacter : LDSpriteNode
         fatalError("init(coder:) has not been implemented")
     }
     
-    func move(moveMatrix: (CGFloat, CGFloat))
+    func move(moveMatrix: (CGFloat, CGFloat))  -> (CGFloat, CGFloat)
     {
 //        let oldX = self.position.x
 //        let oldY = self.position.y
@@ -50,6 +52,8 @@ class LDCharacter : LDSpriteNode
             direction = (yDelta > 0) ? "up" : "down"
             advanceSpunk()
         }
+        
+        return moveMatrix
         
     }
     

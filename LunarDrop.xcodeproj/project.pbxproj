@@ -22,6 +22,8 @@
 		9C155D7B1BC089FF00C74FD7 /* LDScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C155D7A1BC089FF00C74FD7 /* LDScene.swift */; settings = {ASSET_TAGS = (); }; };
 		9C155D7C1BC08BF600C74FD7 /* LDScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C155D7A1BC089FF00C74FD7 /* LDScene.swift */; };
 		9C19D22F1BBCDC7E00863228 /* LDControllableCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C19D22E1BBCDC7E00863228 /* LDControllableCharacter.swift */; };
+		9C270BD91BC203DA0030CC73 /* LDScrollableWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C270BD81BC203DA0030CC73 /* LDScrollableWorld.swift */; settings = {ASSET_TAGS = (); }; };
+		9C270BDA1BC203DA0030CC73 /* LDScrollableWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C270BD81BC203DA0030CC73 /* LDScrollableWorld.swift */; settings = {ASSET_TAGS = (); }; };
 		9C5F9F691BBF5FFB00F8A645 /* LDTimeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */; };
 		9C9786051BBCB495006646A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9786041BBCB495006646A6 /* Constants.swift */; };
 		9CA33F821BBBA31E00D82255 /* LDCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA33F811BBBA31E00D82255 /* LDCharacter.swift */; };
@@ -39,8 +41,9 @@
 		9C155D661BC0638D00C74FD7 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		9C155D711BC074E700C74FD7 /* LDOnScreenJoystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDOnScreenJoystick.swift; path = LunarDrop/LDOnScreenJoystick.swift; sourceTree = "<group>"; };
 		9C155D741BC074FF00C74FD7 /* LDSpriteNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDSpriteNode.swift; path = LunarDrop/LDSpriteNode.swift; sourceTree = "<group>"; };
-		9C155D7A1BC089FF00C74FD7 /* LDScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDScene.swift; sourceTree = "<group>"; };
+		9C155D7A1BC089FF00C74FD7 /* LDScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDScene.swift; path = LunarDrop/LDScene.swift; sourceTree = "<group>"; };
 		9C19D22E1BBCDC7E00863228 /* LDControllableCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDControllableCharacter.swift; path = LunarDrop/LDControllableCharacter.swift; sourceTree = "<group>"; };
+		9C270BD81BC203DA0030CC73 /* LDScrollableWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDScrollableWorld.swift; path = LunarDrop/LDScrollableWorld.swift; sourceTree = "<group>"; };
 		9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDTimeSlider.swift; path = LunarDrop/LDTimeSlider.swift; sourceTree = "<group>"; };
 		9C9786041BBCB495006646A6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = LunarDrop/Constants.swift; sourceTree = "<group>"; };
 		9CA33F811BBBA31E00D82255 /* LDCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDCharacter.swift; path = LunarDrop/LDCharacter.swift; sourceTree = "<group>"; };
@@ -79,6 +82,7 @@
 		9C155D651BC05E1D00C74FD7 /* LunarDrop */ = {
 			isa = PBXGroup;
 			children = (
+				9C270BD81BC203DA0030CC73 /* LDScrollableWorld.swift */,
 				9CF77FC31BBB9035003C739F /* Assets.xcassets */,
 				9CF77FBF1BBB9035003C739F /* GameScene.swift */,
 				9CA33F811BBBA31E00D82255 /* LDCharacter.swift */,
@@ -244,6 +248,7 @@
 				9C155D6C1BC064BB00C74FD7 /* LDControllableCharacter.swift in Sources */,
 				9C155D6D1BC064BB00C74FD7 /* Constants.swift in Sources */,
 				9C155D6E1BC064BB00C74FD7 /* LDTimeSlider.swift in Sources */,
+				9C270BDA1BC203DA0030CC73 /* LDScrollableWorld.swift in Sources */,
 				9C155D761BC074FF00C74FD7 /* LDSpriteNode.swift in Sources */,
 				9C155D671BC0638D00C74FD7 /* GameViewController.swift in Sources */,
 				9CE36B5A1BC04985009842E8 /* AppDelegate.swift in Sources */,
@@ -263,6 +268,7 @@
 				9C155D721BC074E700C74FD7 /* LDOnScreenJoystick.swift in Sources */,
 				9C155D7B1BC089FF00C74FD7 /* LDScene.swift in Sources */,
 				9C5F9F691BBF5FFB00F8A645 /* LDTimeSlider.swift in Sources */,
+				9C270BD91BC203DA0030CC73 /* LDScrollableWorld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

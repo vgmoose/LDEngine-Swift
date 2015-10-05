@@ -12,11 +12,18 @@ class GameScene: LDScene {
 
     let myLabel = SKLabelNode(fontNamed:"Sana Regular")
     let playerSprite = LDControllableCharacter(name: "Link")
+    let dummy = LDControllableCharacter(name: "Link")
+    let world = LDScrollableWorld()
     
     override func didMoveToView(view: SKView)
     {
         playerSprite.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
-        self.addChild(playerSprite)
+        dummy.position = CGPoint(x:CGRectGetMidX(self.frame)-60, y:CGRectGetMidY(self.frame));
+        playerSprite.world = world
+        world.addChild(playerSprite)
+        self.addChild(world)
+        world.addChild(dummy)
+        dummy.direction = "right"
     }
     
     override func buttonDown(key: Int)

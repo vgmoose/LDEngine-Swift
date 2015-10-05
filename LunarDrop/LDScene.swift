@@ -22,7 +22,7 @@ class LDScene : SKScene
     {
         buttonUp(Int(event.keyCode))
     }
-    #endif
+    #endif    
     
     // Button listeners
     func buttonDown(key : Int) {}

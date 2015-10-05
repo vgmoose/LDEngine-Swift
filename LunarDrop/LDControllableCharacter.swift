@@ -32,7 +32,7 @@ class LDControllableCharacter : LDCharacter
     
     override func touchStart(location: CGPoint)
     {
-        print(location)
+        print("You clicked on this character at ",location)
     }
     
     override func redraw()
@@ -44,7 +44,13 @@ class LDControllableCharacter : LDCharacter
         yDelta += (keys.contains( DOWN_KEYCODE)) ? -mySpeed : 0
         yDelta += (keys.contains(   UP_KEYCODE)) ?  mySpeed : 0
         
-        move((xDelta, yDelta))
+        let actualMovement = move((xDelta, yDelta))
+        if (world != nil)
+        {
+            world.pan(actualMovement)
+            print(world.position.x)
+            print(world.position.y)
+        }
 //        print(self.keys)
         
         super.redraw()
