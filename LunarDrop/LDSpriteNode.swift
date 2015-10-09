@@ -16,14 +16,14 @@ class LDSpriteNode : SKSpriteNode
     {
         touchStart(touches.first!.locationInNode(self))
     }
-//    override func touchesDragged(touches: Set<UITouch>, withEvent event: UIEvent?)
-//    {
-//    clickStart(touches.first?.locationInNode(self))
-//    }
-//    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?)
-//    {
-//    clickStart(touches.first?.locationInNode(self))
-//    }
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?)
+    {
+        touchDrag(touches.first!.locationInNode(self))
+    }
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?)
+    {
+        touchEnd(touches.first!.locationInNode(self))
+    }
     #else
     override func mouseDown(event : NSEvent)
     {

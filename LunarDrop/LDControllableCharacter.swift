@@ -48,8 +48,6 @@ class LDControllableCharacter : LDCharacter
         if (world != nil)
         {
             world.pan(actualMovement)
-            print(world.position.x)
-            print(world.position.y)
         }
 //        print(self.keys)
         
