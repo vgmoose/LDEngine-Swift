@@ -24,10 +24,14 @@ class LDCharacter : LDSpriteNode
         
         let texture = charAtlas.textureNamed("down_1")
         super.init(initWithTexture: texture, color: UIColor.whiteColor(), size: texture.size())
-        let border = SKShapeNode()
-        border.path = CGPathCreateWithRoundedRect(CGRect(origin: CGPoint(x:-16, y:-16), size: self.size), 0, 0, nil)
-        border.strokeColor = UIColor.blackColor()
-        self.addChild(border)
+        
+        if DEBUG
+        {
+            let border = SKShapeNode()
+            border.path = CGPathCreateWithRoundedRect(CGRect(origin: CGPoint(x:-16, y:-16), size: self.size), 0, 0, nil)
+            border.strokeColor = UIColor.blackColor()
+            self.addChild(border)
+        }
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -48,6 +52,8 @@ class LDCharacter : LDSpriteNode
         self.position.x += xDelta
         self.position.y += yDelta
         
+//        print(self.position, self.world!.position)
+        
         // collision detection
         for node in world.children
         {
@@ -56,30 +62,35 @@ class LDCharacter : LDSpriteNode
             let char = node as? LDCharacter
             if char == nil { continue }
             
+            
             if self.intersectsNode(char!)
             {
                 // moving right
-                if xDelta > 0 && char!.position.x - char!.size.width/2 < self.position.x + self.size.width/2
+                if xDelta > 0 && char!.left() < self.right()
                 {
-                    self.position.x = char!.position.x - char!.size.width
+                    self.position.x = char!.left() - self.size.width/2
+                    self.world!.snap(self)
                 }
                 
                 // moving left
-                if xDelta < 0 && char!.position.x + char!.size.width/2 > self.position.x - self.size.width/2
+                if xDelta < 0 && char!.right() > self.left()
                 {
-                    self.position.x = char!.position.x + char!.size.width
+                    self.position.x = char!.right() + self.size.width/2
+                    self.world!.snap(self)
                 }
                 
                 // moving down
-                if yDelta > 0 && char!.position.y - char!.size.height/2 < self.position.y + self.size.height/2
+                if yDelta < 0 && char!.up() > self.down()
                 {
-                    self.position.y = char!.position.y - char!.size.height
+                    self.position.y = char!.up() + self.size.height/2
+                    self.world!.snap(self)
                 }
                 
                 // moving up
-                if yDelta < 0 && char!.position.x + char!.size.height/2 > self.position.x - self.size.height/2
+                if yDelta > 0 && char!.down() < self.up()
                 {
-                    self.position.y = char!.position.y + char!.size.height
+                    self.position.y = char!.down() - self.size.height/2
+                    self.world!.snap(self)
                 }
             }
         }
@@ -98,6 +109,12 @@ class LDCharacter : LDSpriteNode
         return moveMatrix
         
     }
+    
+    // functions to get the bounds for each direction
+    func  left() -> CGFloat { return self.position.x -  self.size.width/2 }
+    func right() -> CGFloat { return self.position.x +  self.size.width/2 }
+    func    up() -> CGFloat { return self.position.y + self.size.height/2 }
+    func  down() -> CGFloat { return self.position.y - self.size.height/2 }
     
     func redraw()
     {

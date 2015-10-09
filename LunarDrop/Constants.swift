@@ -13,10 +13,12 @@ Temporary data class until plist/json loading is ready
 import Foundation
 import SpriteKit
 
-let UP_KEYCODE = 14
-let LEFT_KEYCODE = 12
-let RIGHT_KEYCODE = 15
-let DOWN_KEYCODE = 13
+let UP_KEYCODE = 0x7E
+let LEFT_KEYCODE = 0x7B
+let RIGHT_KEYCODE = 0x7C
+let DOWN_KEYCODE = 0x7D
+
+let DEBUG = true
 
 #if os(iOS)
 #else

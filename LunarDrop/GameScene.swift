@@ -14,12 +14,15 @@ class GameScene: LDScene {
     let playerSprite = LDControllableCharacter(name: "Link")
     let dummy = LDControllableCharacter(name: "Link")
     let world = LDScrollableWorld()
-    let joystick = LDOnScreenJoystick()
+    var joystick = LDOnScreenJoystick()
     
     override func didMoveToView(view: SKView)
     {
+        // world setup
+        world.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
+        world.container = self.frame
+        
         // initial player
-        playerSprite.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
         playerSprite.world = world
         world.addChild(playerSprite)
         self.addChild(world)
@@ -30,7 +33,8 @@ class GameScene: LDScene {
         
         // background player (and later dynamic loading here)
         world.addChild(dummy)
-        dummy.position = CGPoint(x:CGRectGetMidX(self.frame)-60, y:CGRectGetMidY(self.frame));
+        
+        dummy.position = CGPoint(x:-60, y:0);
         dummy.direction = "right"
     }
     
