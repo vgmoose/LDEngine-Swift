@@ -62,34 +62,36 @@ class LDCharacter : LDSpriteNode
             let char = node as? LDCharacter
             if char == nil { continue }
             
-            
             if self.intersectsNode(char!)
             {
-                // moving right
-                if xDelta > 0 && char!.left() < self.right()
+                let    upDist = abs(char!.down()  - self.up()   )
+                let  downDist = abs(char!.up()    - self.down() )
+                let  leftDist = abs(char!.right() - self.left() )
+                let rightDist = abs(char!.left()  - self.right())
+                
+                let   minDist = min(upDist, downDist, leftDist, rightDist)
+                
+                if minDist ==    upDist
                 {
-                    self.position.x = char!.left() - self.size.width/2
+                    self.position.y -= minDist
                     self.world!.snap(self)
                 }
                 
-                // moving left
-                if xDelta < 0 && char!.right() > self.left()
+                if minDist ==  downDist
                 {
-                    self.position.x = char!.right() + self.size.width/2
+                    self.position.y += minDist
                     self.world!.snap(self)
                 }
                 
-                // moving down
-                if yDelta < 0 && char!.up() > self.down()
+                if minDist ==  leftDist
                 {
-                    self.position.y = char!.up() + self.size.height/2
+                    self.position.x += minDist
                     self.world!.snap(self)
                 }
                 
-                // moving up
-                if yDelta > 0 && char!.down() < self.up()
+                if minDist == rightDist
                 {
-                    self.position.y = char!.down() - self.size.height/2
+                    self.position.x -= minDist
                     self.world!.snap(self)
                 }
             }
