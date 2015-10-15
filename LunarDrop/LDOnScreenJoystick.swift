@@ -19,8 +19,8 @@ class LDOnScreenJoystick : LDSpriteNode
     
     init()
     {
-        let texture = SKTexture()
-        super.init(initWithTexture: texture, color: UIColor.whiteColor(), size: texture.size())
+        let texture = SKTexture(imageNamed: "circle")
+        super.init(initWithTexture: texture, color: UIColor.whiteColor(), size: CGSize(width:0, height: 0))
         self.hidden = true
         
         self.stick.strokeColor = SKColor.redColor()
