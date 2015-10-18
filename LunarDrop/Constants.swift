@@ -18,7 +18,7 @@ let LEFT_KEYCODE = 0x7B
 let RIGHT_KEYCODE = 0x7C
 let DOWN_KEYCODE = 0x7D
 
-let DEBUG = false
+let DEBUG = true
 
 #if os(iOS)
 #else

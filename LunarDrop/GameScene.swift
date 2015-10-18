@@ -15,12 +15,17 @@ class GameScene: LDScene {
     let dummy = LDControllableCharacter(name: "Link")
     let world = LDScrollableWorld()
     var joystick = LDOnScreenJoystick()
+    var slider: LDTimeSlider?
     
     override func didMoveToView(view: SKView)
     {
         // world setup
         world.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
         world.container = self.frame
+        
+        // setup time slider
+        self.slider = LDTimeSlider(world: world, mapFileName: "initial")
+        self.addChild(self.slider!)
         
         // initial player
         playerSprite.world = world
@@ -32,10 +37,11 @@ class GameScene: LDScene {
         self.addChild(joystick)
         
         // background player (and later dynamic loading here)
-        world.addChild(dummy)
+//        world.addChild(dummy)
+//        slider!.refresh()
         
-        dummy.position = CGPoint(x:-60, y:0);
-        dummy.direction = "right"
+//        dummy.position = CGPoint(x:-60, y:0);
+//        dummy.direction = "right"
     }
     
     override func touchStart(location: CGPoint)
