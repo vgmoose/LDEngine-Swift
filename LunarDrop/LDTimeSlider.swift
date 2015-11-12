@@ -11,12 +11,12 @@ import SpriteKit
 
 class LDTimeSlider : LDSpriteNode
 {
-    var slider:SKShapeNode = SKShapeNode()
+    let timebar: LDBar
     var time:Int = 0
     let world: LDScrollableWorld
     var map: LDMap
     
-    init(world: LDScrollableWorld, mapFileName: String)
+    init(world: LDScrollableWorld, mapFileName: String, canvas: LDScene)
     {
         // initialize texture
         let texture = SKTexture(imageNamed: "circle")
@@ -24,8 +24,11 @@ class LDTimeSlider : LDSpriteNode
         // initialize world and map variables
         self.world = world
         self.map = LDMap(fileName: mapFileName)
+        
+        // time bars
+        self.timebar = LDBar(size: CGSize(width: canvas.size.width, height: 50), position: CGPoint(x: canvas.size.width/2, y:0))
 
-        super.init(initWithTexture: texture, color: UIColor.whiteColor(), size: CGSize(width:0, height: 0))
+        super.init(initWithTexture: texture, color: UIColor.redColor(), size: CGSize(width: 0, height: 0))
                 
         // add all the characters from the map to the world
         for curChar:LDSyncedCharacter in self.map.chars
@@ -34,11 +37,10 @@ class LDTimeSlider : LDSpriteNode
             curChar.slider = self
         }
         
-        self.hidden = true
-        
-        // add slider node
-        self.slider.strokeColor = SKColor.redColor()
-        self.addChild(slider)
+//        self.hidden = false
+//        
+//        // add slider properties
+        self.addChild( timebar)
         
         // perform initial refresh
         refresh()
@@ -54,6 +56,13 @@ class LDTimeSlider : LDSpriteNode
         {
             curChar.sync()
         }
+    }
+    
+    func tick()
+    {
+        print(time)
+        time += 1
+        timebar.set(CGFloat(time) / 3600.0)
     }
     
     func warpTime(newTime:Int)

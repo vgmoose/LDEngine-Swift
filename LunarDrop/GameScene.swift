@@ -24,7 +24,7 @@ class GameScene: LDScene {
         world.container = self.frame
         
         // setup time slider
-        self.slider = LDTimeSlider(world: world, mapFileName: "initial")
+        self.slider = LDTimeSlider(world: world, mapFileName: "initial", canvas: self)
         self.addChild(self.slider!)
         
         // initial player
@@ -72,6 +72,7 @@ class GameScene: LDScene {
     override func update(currentTime: CFTimeInterval)
     {
         /* Called before each frame is rendered */
+        slider!.tick()
         playerSprite.redraw()
     }
     

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C10FF1B1BF452F60070A2A1 /* LDBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C10FF1A1BF452F60070A2A1 /* LDBar.swift */; settings = {ASSET_TAGS = (); }; };
+		9C10FF1C1BF452F60070A2A1 /* LDBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C10FF1A1BF452F60070A2A1 /* LDBar.swift */; settings = {ASSET_TAGS = (); }; };
 		9C155D671BC0638D00C74FD7 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C155D661BC0638D00C74FD7 /* GameViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9C155D681BC0648600C74FD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF77FC31BBB9035003C739F /* Assets.xcassets */; };
 		9C155D691BC0648600C74FD7 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9CF77FC11BBB9035003C739F /* GameScene.sks */; };
@@ -44,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C10FF1A1BF452F60070A2A1 /* LDBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDBar.swift; sourceTree = "<group>"; };
 		9C155D661BC0638D00C74FD7 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		9C155D711BC074E700C74FD7 /* LDOnScreenJoystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDOnScreenJoystick.swift; path = LunarDrop/LDOnScreenJoystick.swift; sourceTree = "<group>"; };
 		9C155D741BC074FF00C74FD7 /* LDSpriteNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDSpriteNode.swift; path = LunarDrop/LDSpriteNode.swift; sourceTree = "<group>"; };
@@ -105,6 +108,7 @@
 				9C155D741BC074FF00C74FD7 /* LDSpriteNode.swift */,
 				9C155D7A1BC089FF00C74FD7 /* LDScene.swift */,
 				9C1C707D1BD3FFCE00087DD0 /* LDMap.swift */,
+				9C10FF1A1BF452F60070A2A1 /* LDBar.swift */,
 			);
 			name = LunarDrop;
 			sourceTree = "<group>";
@@ -274,6 +278,7 @@
 				9C155D6E1BC064BB00C74FD7 /* LDTimeSlider.swift in Sources */,
 				9C270BDA1BC203DA0030CC73 /* LDScrollableWorld.swift in Sources */,
 				9C155D761BC074FF00C74FD7 /* LDSpriteNode.swift in Sources */,
+				9C10FF1C1BF452F60070A2A1 /* LDBar.swift in Sources */,
 				9C155D671BC0638D00C74FD7 /* GameViewController.swift in Sources */,
 				9CE36B5A1BC04985009842E8 /* AppDelegate.swift in Sources */,
 			);
@@ -286,6 +291,7 @@
 				9C155D751BC074FF00C74FD7 /* LDSpriteNode.swift in Sources */,
 				9CF77FC01BBB9035003C739F /* GameScene.swift in Sources */,
 				9C1C707E1BD3FFCE00087DD0 /* LDMap.swift in Sources */,
+				9C10FF1B1BF452F60070A2A1 /* LDBar.swift in Sources */,
 				9CF77FBE1BBB9035003C739F /* AppDelegate.swift in Sources */,
 				9CA33F821BBBA31E00D82255 /* LDCharacter.swift in Sources */,
 				9CB8ACE91BD4360800C60ECD /* LDSyncedCharacter.swift in Sources */,
