@@ -55,44 +55,47 @@ class LDCharacter : LDSpriteNode
 //        print(self.position, self.world!.position)
         
         // collision detection
-        for node in world.children
+        if (self.checkCollisions)
         {
-            if node == self { continue }
-            
-            let char = node as? LDCharacter
-            if char == nil { continue }
-            
-            if self.intersectsNode(char!)
+            for node in world.children
             {
-                let    upDist = abs(char!.down()  - self.up()   )
-                let  downDist = abs(char!.up()    - self.down() )
-                let  leftDist = abs(char!.right() - self.left() )
-                let rightDist = abs(char!.left()  - self.right())
+                if node == self { continue }
                 
-                let   minDist = min(upDist, downDist, leftDist, rightDist)
+                let char = node as? LDCharacter
+                if char == nil { continue }
                 
-                if minDist ==    upDist
+                if self.intersectsNode(char!)
                 {
-                    self.position.y -= minDist
-                    self.world!.snap(self)
-                }
-                
-                if minDist ==  downDist
-                {
-                    self.position.y += minDist
-                    self.world!.snap(self)
-                }
-                
-                if minDist ==  leftDist
-                {
-                    self.position.x += minDist
-                    self.world!.snap(self)
-                }
-                
-                if minDist == rightDist
-                {
-                    self.position.x -= minDist
-                    self.world!.snap(self)
+                    let    upDist = abs(char!.down()  - self.up()   )
+                    let  downDist = abs(char!.up()    - self.down() )
+                    let  leftDist = abs(char!.right() - self.left() )
+                    let rightDist = abs(char!.left()  - self.right())
+                    
+                    let   minDist = min(upDist, downDist, leftDist, rightDist)
+                    
+                    if minDist ==    upDist
+                    {
+                        self.position.y -= minDist
+                        self.world!.snap(self)
+                    }
+                    
+                    if minDist ==  downDist
+                    {
+                        self.position.y += minDist
+                        self.world!.snap(self)
+                    }
+                    
+                    if minDist ==  leftDist
+                    {
+                        self.position.x += minDist
+                        self.world!.snap(self)
+                    }
+                    
+                    if minDist == rightDist
+                    {
+                        self.position.x -= minDist
+                        self.world!.snap(self)
+                    }
                 }
             }
         }

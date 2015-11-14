@@ -46,7 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9C10FF1A1BF452F60070A2A1 /* LDBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDBar.swift; sourceTree = "<group>"; };
+		9C10FF1A1BF452F60070A2A1 /* LDBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDBar.swift; path = LunarDrop/LDBar.swift; sourceTree = "<group>"; };
 		9C155D661BC0638D00C74FD7 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		9C155D711BC074E700C74FD7 /* LDOnScreenJoystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDOnScreenJoystick.swift; path = LunarDrop/LDOnScreenJoystick.swift; sourceTree = "<group>"; };
 		9C155D741BC074FF00C74FD7 /* LDSpriteNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDSpriteNode.swift; path = LunarDrop/LDSpriteNode.swift; sourceTree = "<group>"; };

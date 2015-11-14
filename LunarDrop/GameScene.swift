@@ -29,6 +29,7 @@ class GameScene: LDScene {
         
         // initial player
         playerSprite.world = world
+        playerSprite.checkCollisions = true
         world.addChild(playerSprite)
         self.addChild(world)
         

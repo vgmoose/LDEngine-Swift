@@ -12,7 +12,7 @@ import SpriteKit
 class LDTimeSlider : LDSpriteNode
 {
     let timebar: LDBar
-    var time:Int = 0
+    var time:Int = -10
     let world: LDScrollableWorld
     var map: LDMap
     
@@ -60,15 +60,17 @@ class LDTimeSlider : LDSpriteNode
     
     func tick()
     {
-        print(time)
-        time += 1
-        timebar.set(CGFloat(time) / 3600.0)
+        warpTime(time + 1)
     }
     
     func warpTime(newTime:Int)
     {
         time = newTime
-        refresh()
+        if (time >= 0)
+        {
+            timebar.set(CGFloat(time) / 1440.0)
+            refresh()
+        }
     }
     
     

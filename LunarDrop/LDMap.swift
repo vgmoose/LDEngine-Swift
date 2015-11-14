@@ -39,6 +39,9 @@ class LDMap
                     let newChar: LDSyncedCharacter = LDSyncedCharacter()
                     newChar.myName = (curChar["name"] as! String)
                     newChar.sched = (curChar["sched"] as! NSDictionary)
+                    print("never got here")
+                    // index the sched keys for later
+                    newChar.indexKeys()
                     
                     // append it to the array
                     self.chars.append(newChar)
