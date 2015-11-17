@@ -9,24 +9,31 @@
 import Foundation
 import SpriteKit
 
-class LDBar : SKSpriteNode
+class LDBar : LDSpriteNode
 {
-    let overlay: SKSpriteNode
+    var overlay: SKSpriteNode
+    var slider: LDTimeSlider?
     
     init(size: CGSize, position: CGPoint)
     {
-        self.overlay = SKSpriteNode(color: UIColor.redColor(), size: size)
-                
-        super.init(texture: nil, color: UIColor.greenColor(), size: size)
+        self.overlay = SKSpriteNode(texture: nil, color: UIColor.redColor(), size: size)
+        
+        super.init(initWithTexture: nil, color: UIColor.greenColor(), size: size)
         self.position = position
         self.overlay.anchorPoint = CGPoint(x: 0, y: 0.5)
         self.overlay.position.x = -self.size.width/2
+        self.zPosition = 999
         
         set(0)
         
         self.addChild(overlay)
         
-        
+    }
+    
+    override func touchStart(location: CGPoint)
+    {
+        print("TRYING TO WARP TIME")
+        self.slider!.warpTime( Int(((location.x + self.size.width/2) / self.size.width)*1440) )
     }
     
     func set(percent: CGFloat)

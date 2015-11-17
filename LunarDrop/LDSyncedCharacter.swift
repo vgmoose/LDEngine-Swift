@@ -47,7 +47,7 @@ class LDSyncedCharacter : LDCharacter
             let cur_x: CGFloat = CGFloat(ox) + CGFloat(nx - ox) * percent
             let cur_y: CGFloat = CGFloat(oy) + CGFloat(ny - oy) * percent
             
-            print(currentKey, "\t", ox, "\t", Int(cur_x), "\t", oy, "\t", nx, "\t", Int(cur_y), "\t", ny)
+//            print(currentKey, "\t", ox, "\t", Int(cur_x), "\t", oy, "\t", nx, "\t", Int(cur_y), "\t", ny)
 
             return CGPoint(x: cur_x, y:cur_y)
         }
@@ -81,7 +81,13 @@ class LDSyncedCharacter : LDCharacter
         {
             // update the current key
             currentKey += 1
-            print("CHANGING KEY FROM ", currentKey-1, " TO ", currentKey)
+        }
+        
+//        // update for past
+        if (0 <= currentKey) && (self.sched_keys![currentKey ] as! Int) > time
+        {
+            // update the current key
+            currentKey -= 1
         }
     }
     

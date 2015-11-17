@@ -12,7 +12,7 @@ import SpriteKit
 class LDTimeSlider : LDSpriteNode
 {
     let timebar: LDBar
-    var time:Int = -10
+    var time:Int = -20
     let world: LDScrollableWorld
     var map: LDMap
     
@@ -29,6 +29,8 @@ class LDTimeSlider : LDSpriteNode
         self.timebar = LDBar(size: CGSize(width: canvas.size.width, height: 50), position: CGPoint(x: canvas.size.width/2, y:0))
 
         super.init(initWithTexture: texture, color: UIColor.redColor(), size: CGSize(width: 0, height: 0))
+        
+        self.timebar.slider = self
                 
         // add all the characters from the map to the world
         for curChar:LDSyncedCharacter in self.map.chars
@@ -65,6 +67,11 @@ class LDTimeSlider : LDSpriteNode
     
     func warpTime(newTime:Int)
     {
+        if (newTime - time > 1)
+        {
+            print("WARPING TIME FROM ", time, " to ", newTime)
+        }
+
         time = newTime
         if (time >= 0)
         {

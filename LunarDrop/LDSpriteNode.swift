@@ -39,7 +39,7 @@ class LDSpriteNode : SKSpriteNode
     }
     #endif
     
-    init(initWithTexture texture : SKTexture, color: UIColor, size: CGSize)
+    init(initWithTexture texture : SKTexture?, color: UIColor, size: CGSize)
     {
         super.init(texture: texture, color: color, size: size)
         self.userInteractionEnabled = true;
