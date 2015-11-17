@@ -37,9 +37,6 @@ class LDSyncedCharacter : LDCharacter
             let nx = (((self.sched![newTimeKey] as! NSDictionary)["x"] as! Int) - (slider!.map.width/2))  * slider!.map.width
             let ny = (((self.sched![newTimeKey] as! NSDictionary)["y"] as! Int) - (slider!.map.height/2)) * slider!.map.height
             
-//            let oldPos: CGPoint = CGPoint(x: ox, y: oy)
-//            let newPos: CGPoint = CGPoint(x: nx, y: ny)
-            
             // percent so far for this keyframe and time
             let percent: CGFloat = CGFloat(time - oldTime) / CGFloat(newTime - oldTime);
             
@@ -53,8 +50,15 @@ class LDSyncedCharacter : LDCharacter
         }
         else
         {
-            // don't move if no future keyframe
-            return self.position
+            // no future keyframes
+            // get difference for last position
+            
+            let lastTimeKey: String = String(self.sched_keys!.lastObject as! Int)
+            
+            let nx = (((self.sched![lastTimeKey] as! NSDictionary)["x"] as! Int) - (slider!.map.width/2))  * slider!.map.width
+            let ny = (((self.sched![lastTimeKey] as! NSDictionary)["y"] as! Int) - (slider!.map.height/2)) * slider!.map.height
+            
+            return CGPoint(x: nx, y:ny)
         }
     }
     

@@ -31,6 +31,8 @@
 		9C270BD91BC203DA0030CC73 /* LDScrollableWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C270BD81BC203DA0030CC73 /* LDScrollableWorld.swift */; settings = {ASSET_TAGS = (); }; };
 		9C270BDA1BC203DA0030CC73 /* LDScrollableWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C270BD81BC203DA0030CC73 /* LDScrollableWorld.swift */; settings = {ASSET_TAGS = (); }; };
 		9C5F9F691BBF5FFB00F8A645 /* LDTimeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */; };
+		9C6215631BFAE71F00767CEC /* LDBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6215621BFAE71F00767CEC /* LDBackground.swift */; settings = {ASSET_TAGS = (); }; };
+		9C6215641BFAE71F00767CEC /* LDBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6215621BFAE71F00767CEC /* LDBackground.swift */; settings = {ASSET_TAGS = (); }; };
 		9C9786051BBCB495006646A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9786041BBCB495006646A6 /* Constants.swift */; };
 		9CA33F821BBBA31E00D82255 /* LDCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA33F811BBBA31E00D82255 /* LDCharacter.swift */; };
 		9CB8ACE91BD4360800C60ECD /* LDSyncedCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB8ACE81BD4360800C60ECD /* LDSyncedCharacter.swift */; settings = {ASSET_TAGS = (); }; };
@@ -56,6 +58,7 @@
 		9C1C707D1BD3FFCE00087DD0 /* LDMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDMap.swift; path = LunarDrop/LDMap.swift; sourceTree = "<group>"; };
 		9C270BD81BC203DA0030CC73 /* LDScrollableWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDScrollableWorld.swift; path = LunarDrop/LDScrollableWorld.swift; sourceTree = "<group>"; };
 		9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDTimeSlider.swift; path = LunarDrop/LDTimeSlider.swift; sourceTree = "<group>"; };
+		9C6215621BFAE71F00767CEC /* LDBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDBackground.swift; sourceTree = "<group>"; };
 		9C9786041BBCB495006646A6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = LunarDrop/Constants.swift; sourceTree = "<group>"; };
 		9CA33F811BBBA31E00D82255 /* LDCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDCharacter.swift; path = LunarDrop/LDCharacter.swift; sourceTree = "<group>"; };
 		9CB8ACE81BD4360800C60ECD /* LDSyncedCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDSyncedCharacter.swift; path = LunarDrop/LDSyncedCharacter.swift; sourceTree = "<group>"; };
@@ -109,6 +112,7 @@
 				9C155D7A1BC089FF00C74FD7 /* LDScene.swift */,
 				9C1C707D1BD3FFCE00087DD0 /* LDMap.swift */,
 				9C10FF1A1BF452F60070A2A1 /* LDBar.swift */,
+				9C6215621BFAE71F00767CEC /* LDBackground.swift */,
 			);
 			name = LunarDrop;
 			sourceTree = "<group>";
@@ -271,6 +275,7 @@
 				9C1C707F1BD3FFCE00087DD0 /* LDMap.swift in Sources */,
 				9C155D7C1BC08BF600C74FD7 /* LDScene.swift in Sources */,
 				9C155D731BC074E700C74FD7 /* LDOnScreenJoystick.swift in Sources */,
+				9C6215641BFAE71F00767CEC /* LDBackground.swift in Sources */,
 				9C155D6A1BC064BB00C74FD7 /* GameScene.swift in Sources */,
 				9C155D6B1BC064BB00C74FD7 /* LDCharacter.swift in Sources */,
 				9C155D6C1BC064BB00C74FD7 /* LDControllableCharacter.swift in Sources */,
@@ -297,6 +302,7 @@
 				9CB8ACE91BD4360800C60ECD /* LDSyncedCharacter.swift in Sources */,
 				9C19D22F1BBCDC7E00863228 /* LDControllableCharacter.swift in Sources */,
 				9C9786051BBCB495006646A6 /* Constants.swift in Sources */,
+				9C6215631BFAE71F00767CEC /* LDBackground.swift in Sources */,
 				9C155D721BC074E700C74FD7 /* LDOnScreenJoystick.swift in Sources */,
 				9C155D7B1BC089FF00C74FD7 /* LDScene.swift in Sources */,
 				9C5F9F691BBF5FFB00F8A645 /* LDTimeSlider.swift in Sources */,

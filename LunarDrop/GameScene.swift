@@ -37,6 +37,12 @@ class GameScene: LDScene {
         joystick.player = playerSprite
         self.addChild(joystick)
         
+        // create background
+        let bgtexture: SKTexture = SKTexture(imageNamed: "Grass.jpg")
+        let bg: SKSpriteNode = SKSpriteNode(texture: bgtexture, size: bgtexture.size())
+        bg.zPosition = -100
+        world.addChild(bg)
+        
         // background player (and later dynamic loading here)
 //        world.addChild(dummy)
 //        slider!.refresh()
