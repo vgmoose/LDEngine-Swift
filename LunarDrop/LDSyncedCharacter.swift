@@ -33,9 +33,9 @@ class LDSyncedCharacter : LDCharacter
             let newTimeKey = String(newTime)
             
             let ox = (((self.sched![oldTimeKey] as! NSDictionary)["x"] as! Int) - (slider!.map.width/2))  * slider!.map.width
-            let oy = (((self.sched![oldTimeKey] as! NSDictionary)["y"] as! Int) - (slider!.map.height/2)) * slider!.map.height
+            let oy = -1*((((self.sched![oldTimeKey] as! NSDictionary)["y"] as! Int) - (slider!.map.height/2)) * slider!.map.height)
             let nx = (((self.sched![newTimeKey] as! NSDictionary)["x"] as! Int) - (slider!.map.width/2))  * slider!.map.width
-            let ny = (((self.sched![newTimeKey] as! NSDictionary)["y"] as! Int) - (slider!.map.height/2)) * slider!.map.height
+            let ny = -1*((((self.sched![newTimeKey] as! NSDictionary)["y"] as! Int) - (slider!.map.height/2)) * slider!.map.height)
             
             // percent so far for this keyframe and time
             let percent: CGFloat = CGFloat(time - oldTime) / CGFloat(newTime - oldTime);
@@ -44,7 +44,7 @@ class LDSyncedCharacter : LDCharacter
             let cur_x: CGFloat = CGFloat(ox) + CGFloat(nx - ox) * percent
             let cur_y: CGFloat = CGFloat(oy) + CGFloat(ny - oy) * percent
             
-            print(currentKey, "\t", ox, "\t", Int(cur_x), "\t", oy, "\t", nx, "\t", Int(cur_y), "\t", ny)
+//            print(currentKey, "\t", ox, "\t", Int(cur_x), "\t", oy, "\t", nx, "\t", Int(cur_y), "\t", ny)
 
             return CGPoint(x: cur_x, y:cur_y)
         }
@@ -56,7 +56,7 @@ class LDSyncedCharacter : LDCharacter
             let lastTimeKey: String = String(self.sched_keys!.lastObject as! Int)
             
             let nx = (((self.sched![lastTimeKey] as! NSDictionary)["x"] as! Int) - (slider!.map.width/2))  * slider!.map.width
-            let ny = (((self.sched![lastTimeKey] as! NSDictionary)["y"] as! Int) - (slider!.map.height/2)) * slider!.map.height
+            let ny = -1*((((self.sched![lastTimeKey] as! NSDictionary)["y"] as! Int) - (slider!.map.height/2)) * slider!.map.height)
             
             return CGPoint(x: nx, y:ny)
         }
