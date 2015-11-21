@@ -44,7 +44,7 @@ class LDSyncedCharacter : LDCharacter
             let cur_x: CGFloat = CGFloat(ox) + CGFloat(nx - ox) * percent
             let cur_y: CGFloat = CGFloat(oy) + CGFloat(ny - oy) * percent
             
-//            print(currentKey, "\t", ox, "\t", Int(cur_x), "\t", oy, "\t", nx, "\t", Int(cur_y), "\t", ny)
+            print(currentKey, "\t", ox, "\t", Int(cur_x), "\t", oy, "\t", nx, "\t", Int(cur_y), "\t", ny)
 
             return CGPoint(x: cur_x, y:cur_y)
         }
@@ -80,6 +80,7 @@ class LDSyncedCharacter : LDCharacter
     
     func updateCurrentKeyIfNeeded(time: Int)
     {
+
         // update for future
         if (self.sched_keys!.count > currentKey+1) && (self.sched_keys![currentKey + 1] as! Int) <= time
         {
@@ -105,6 +106,7 @@ class LDSyncedCharacter : LDCharacter
             intkeys.addObject(keyString.integerValue)
         }
         self.sched_keys = intkeys
+        self.sched_keys = (self.sched_keys! as! [Int]).sort()
     }
 
     required init(name charName: String) {
