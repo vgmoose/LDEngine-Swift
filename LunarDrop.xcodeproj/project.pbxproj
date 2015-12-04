@@ -30,6 +30,8 @@
 		9C1C707F1BD3FFCE00087DD0 /* LDMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1C707D1BD3FFCE00087DD0 /* LDMap.swift */; settings = {ASSET_TAGS = (); }; };
 		9C270BD91BC203DA0030CC73 /* LDScrollableWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C270BD81BC203DA0030CC73 /* LDScrollableWorld.swift */; settings = {ASSET_TAGS = (); }; };
 		9C270BDA1BC203DA0030CC73 /* LDScrollableWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C270BD81BC203DA0030CC73 /* LDScrollableWorld.swift */; settings = {ASSET_TAGS = (); }; };
+		9C2D983D1C06EA54008526C5 /* many.ld in Resources */ = {isa = PBXBuildFile; fileRef = 9C2D983C1C06EA54008526C5 /* many.ld */; settings = {ASSET_TAGS = (); }; };
+		9C2D983E1C06EA54008526C5 /* many.ld in Resources */ = {isa = PBXBuildFile; fileRef = 9C2D983C1C06EA54008526C5 /* many.ld */; settings = {ASSET_TAGS = (); }; };
 		9C5F9F691BBF5FFB00F8A645 /* LDTimeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */; };
 		9C6215631BFAE71F00767CEC /* LDBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6215621BFAE71F00767CEC /* LDBackground.swift */; settings = {ASSET_TAGS = (); }; };
 		9C6215641BFAE71F00767CEC /* LDBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6215621BFAE71F00767CEC /* LDBackground.swift */; settings = {ASSET_TAGS = (); }; };
@@ -59,6 +61,7 @@
 		9C1C707A1BD319DD00087DD0 /* swirl.ld */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = swirl.ld; path = LunarDrop/Maps/swirl.ld; sourceTree = "<group>"; };
 		9C1C707D1BD3FFCE00087DD0 /* LDMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDMap.swift; path = LunarDrop/LDMap.swift; sourceTree = "<group>"; };
 		9C270BD81BC203DA0030CC73 /* LDScrollableWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDScrollableWorld.swift; path = LunarDrop/LDScrollableWorld.swift; sourceTree = "<group>"; };
+		9C2D983C1C06EA54008526C5 /* many.ld */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = many.ld; sourceTree = "<group>"; };
 		9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDTimeSlider.swift; path = LunarDrop/LDTimeSlider.swift; sourceTree = "<group>"; };
 		9C6215621BFAE71F00767CEC /* LDBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDBackground.swift; sourceTree = "<group>"; };
 		9C75B18B1C00E15600DF10C8 /* initial.ld */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = initial.ld; sourceTree = "<group>"; };
@@ -124,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				9C75B18B1C00E15600DF10C8 /* initial.ld */,
+				9C2D983C1C06EA54008526C5 /* many.ld */,
 				9C1C707A1BD319DD00087DD0 /* swirl.ld */,
 			);
 			name = Maps;
@@ -253,6 +257,7 @@
 				9C155D681BC0648600C74FD7 /* Assets.xcassets in Resources */,
 				9C155D691BC0648600C74FD7 /* GameScene.sks in Resources */,
 				9C75B18D1C00E15600DF10C8 /* initial.ld in Resources */,
+				9C2D983E1C06EA54008526C5 /* many.ld in Resources */,
 				9CE36B681BC04985009842E8 /* LaunchScreen.storyboard in Resources */,
 				9CE36B631BC04985009842E8 /* Main.storyboard in Resources */,
 			);
@@ -264,6 +269,7 @@
 			files = (
 				9CF77FC41BBB9035003C739F /* Assets.xcassets in Resources */,
 				9C75B18C1C00E15600DF10C8 /* initial.ld in Resources */,
+				9C2D983D1C06EA54008526C5 /* many.ld in Resources */,
 				9CF77FC21BBB9035003C739F /* GameScene.sks in Resources */,
 				9C1C707B1BD319DD00087DD0 /* swirl.ld in Resources */,
 				9CF77FC71BBB9035003C739F /* MainMenu.xib in Resources */,

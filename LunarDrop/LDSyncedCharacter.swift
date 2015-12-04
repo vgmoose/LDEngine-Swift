@@ -88,7 +88,7 @@ class LDSyncedCharacter : LDCharacter
             currentKey += 1
         }
         
-//        // update for past
+        // update for past
         if (0 <= currentKey) && (self.sched_keys![currentKey ] as! Int) > time
         {
             // update the current key
@@ -98,14 +98,8 @@ class LDSyncedCharacter : LDCharacter
     
     func indexKeys()
     {
-        let intkeys:NSMutableArray = []
-        let keys:NSArray = self.sched!.allKeys
-        for key:Any in keys
-        {
-            let keyString = (key as! NSString)
-            intkeys.addObject(keyString.integerValue)
-        }
-        self.sched_keys = intkeys
+        // read schedule times (integer keys) from JSON
+        self.sched_keys = self.sched!.allKeys.map({(x:AnyObject) -> Int in (x as! NSString).integerValue})
         self.sched_keys = (self.sched_keys! as! [Int]).sort()
     }
 
