@@ -16,6 +16,8 @@ class GameScene: LDScene {
     let world = LDScrollableWorld()
     var joystick = LDOnScreenJoystick()
     var slider: LDTimeSlider?
+    var textbox: LDTextBox?
+    let timeIsFlowing = true
     
     override func didMoveToView(view: SKView)
     {
@@ -26,6 +28,10 @@ class GameScene: LDScene {
         // setup time slider
         self.slider = LDTimeSlider(world: world, mapFileName: "initial", canvas: self)
         self.addChild(self.slider!)
+        
+        // setup text box
+        self.textbox = LDTextBox(scene: self)
+        self.addChild(self.textbox!)
         
         // initial player
         playerSprite.world = world
@@ -42,6 +48,8 @@ class GameScene: LDScene {
         let bg: SKSpriteNode = SKSpriteNode(texture: bgtexture, size: bgtexture.size())
         bg.zPosition = -100
         world.addChild(bg)
+        
+        self.addChild(myLabel)
         
         // background player (and later dynamic loading here)
 //        world.addChild(dummy)
@@ -78,9 +86,17 @@ class GameScene: LDScene {
     
     override func update(currentTime: CFTimeInterval)
     {
-        /* Called before each frame is rendered */
-        slider!.tick()
+        if (self.timeIsFlowing)
+        {
+            /* Called before each frame is rendered */
+            slider!.tick()
+        } else
+        {
+            self.textbox!.churn()
+        }
+        
         playerSprite.redraw()
+
     }
     
     override func didSimulatePhysics() {
