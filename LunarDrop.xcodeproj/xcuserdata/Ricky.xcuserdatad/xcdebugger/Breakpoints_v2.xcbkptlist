@@ -280,11 +280,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LunarDrop/LDTextBox.swift"
-            timestampString = "471748234.462027"
+            timestampString = "471845031.577608"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "LDTextBox"
             landmarkType = "3">
          </BreakpointContent>
@@ -296,12 +296,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LunarDrop/LDTextBox.swift"
-            timestampString = "471750135.536349"
+            timestampString = "471845031.577608"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "applyFormatting(_:width:)"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "applyFormatting(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

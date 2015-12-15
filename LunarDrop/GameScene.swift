@@ -90,6 +90,8 @@ class GameScene: LDScene {
         {
             /* Called before each frame is rendered */
             slider!.tick()
+            self.textbox!.churn()
+
         } else
         {
             self.textbox!.churn()

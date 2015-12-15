@@ -14,6 +14,9 @@ class LDTextBox : LDSpriteNode
     let fields:Array<SKLabelNode> = [SKLabelNode(), SKLabelNode(), SKLabelNode()]
     var target: String
     let fontSize:CGFloat = 30
+    var charsPerLine: Int = 0
+    var churnCounter: Double = 0
+    var textSpeed:Double = 5 //  1 character every 5 frames (12 characters a second)
     
     init(scene: LDScene)
     {
@@ -24,7 +27,8 @@ class LDTextBox : LDSpriteNode
         self.anchorPoint = CGPoint(x: 0, y: 0)
         self.position = CGPoint(x:0, y:50)
 
-        applyFormatting(fields, width:Int(scene.size.width/(fontSize*0.62)))
+        charsPerLine = Int(scene.size.width/(fontSize*0.62))
+        applyFormatting(fields)
         
         print("Length of string:", target.characters.count)
         print("Screen width: ", scene.size.width)
@@ -32,11 +36,9 @@ class LDTextBox : LDSpriteNode
 
     }
     
-    func applyFormatting(fields: Array<SKLabelNode>, width:Int)
+    func applyFormatting(fields: Array<SKLabelNode>)
     {
         var count:Int = 0
-        let charsPerLine:Int = width
-        let targetChars:Array<Character> = Array(target.characters)
         
         for label:SKLabelNode in fields
         {
@@ -46,18 +48,6 @@ class LDTextBox : LDSpriteNode
             label.fontName = "LCD Solid"
             label.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.Left
             
-            let startIndex = count*charsPerLine
-            var endIndex = (count+1)*charsPerLine
-            if startIndex < targetChars.count
-            {
-                if endIndex >= targetChars.count
-                {
-                    endIndex = targetChars.count
-                }
-                
-                label.text = String(targetChars[startIndex..<endIndex])
-            }
-            
             count += 1
             self.addChild(label)
         }
@@ -65,7 +55,29 @@ class LDTextBox : LDSpriteNode
     
     func churn()
     {
-        
+        var count:Int = 0
+        churnCounter += 1/textSpeed
+        let targetChars:Array<Character> = Array(target.characters)
+
+        for label:SKLabelNode in fields
+        {
+            let startIndex = count*charsPerLine
+            var endIndex = (count+1)*charsPerLine
+            if startIndex < targetChars.count && startIndex < Int(churnCounter)
+            {
+                if endIndex >= targetChars.count
+                {
+                    endIndex = targetChars.count
+                }
+                if endIndex >= Int(churnCounter)
+                {
+                    endIndex = Int(churnCounter)
+                }
+                
+                label.text = String(targetChars[startIndex..<endIndex])
+            }
+            count += 1
+        }
     }
 
     required init?(coder aDecoder: NSCoder) {
