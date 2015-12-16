@@ -32,15 +32,7 @@
 		9C270BDA1BC203DA0030CC73 /* LDScrollableWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C270BD81BC203DA0030CC73 /* LDScrollableWorld.swift */; settings = {ASSET_TAGS = (); }; };
 		9C295B151C1273F30086ACFF /* LDTextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C295B141C1273F30086ACFF /* LDTextBox.swift */; settings = {ASSET_TAGS = (); }; };
 		9C295B161C1273F30086ACFF /* LDTextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C295B141C1273F30086ACFF /* LDTextBox.swift */; settings = {ASSET_TAGS = (); }; };
-		9C295B181C1285860086ACFF /* LCD_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C295B171C1285860086ACFF /* LCD_Solid.ttf */; settings = {ASSET_TAGS = (); }; };
-		9C295B191C1285860086ACFF /* LCD_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C295B171C1285860086ACFF /* LCD_Solid.ttf */; settings = {ASSET_TAGS = (); }; };
-		9C2D983D1C06EA54008526C5 /* many.ld in Resources */ = {isa = PBXBuildFile; fileRef = 9C2D983C1C06EA54008526C5 /* many.ld */; settings = {ASSET_TAGS = (); }; };
-		9C2D983E1C06EA54008526C5 /* many.ld in Resources */ = {isa = PBXBuildFile; fileRef = 9C2D983C1C06EA54008526C5 /* many.ld */; settings = {ASSET_TAGS = (); }; };
 		9C5F9F691BBF5FFB00F8A645 /* LDTimeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */; };
-		9C6215631BFAE71F00767CEC /* LDBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6215621BFAE71F00767CEC /* LDBackground.swift */; settings = {ASSET_TAGS = (); }; };
-		9C6215641BFAE71F00767CEC /* LDBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6215621BFAE71F00767CEC /* LDBackground.swift */; settings = {ASSET_TAGS = (); }; };
-		9C75B18C1C00E15600DF10C8 /* initial.ld in Resources */ = {isa = PBXBuildFile; fileRef = 9C75B18B1C00E15600DF10C8 /* initial.ld */; settings = {ASSET_TAGS = (); }; };
-		9C75B18D1C00E15600DF10C8 /* initial.ld in Resources */ = {isa = PBXBuildFile; fileRef = 9C75B18B1C00E15600DF10C8 /* initial.ld */; settings = {ASSET_TAGS = (); }; };
 		9C9786051BBCB495006646A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9786041BBCB495006646A6 /* Constants.swift */; };
 		9CA33F821BBBA31E00D82255 /* LDCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA33F811BBBA31E00D82255 /* LDCharacter.swift */; };
 		9CB8ACE91BD4360800C60ECD /* LDSyncedCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB8ACE81BD4360800C60ECD /* LDSyncedCharacter.swift */; settings = {ASSET_TAGS = (); }; };
@@ -53,6 +45,14 @@
 		9CF77FC21BBB9035003C739F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9CF77FC11BBB9035003C739F /* GameScene.sks */; };
 		9CF77FC41BBB9035003C739F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF77FC31BBB9035003C739F /* Assets.xcassets */; };
 		9CF77FC71BBB9035003C739F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CF77FC51BBB9035003C739F /* MainMenu.xib */; };
+		9CFF35191C212D2F00ED6FA0 /* LDBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF35181C212D2F00ED6FA0 /* LDBackground.swift */; settings = {ASSET_TAGS = (); }; };
+		9CFF351A1C212D2F00ED6FA0 /* LDBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF35181C212D2F00ED6FA0 /* LDBackground.swift */; settings = {ASSET_TAGS = (); }; };
+		9CFF351D1C212D7000ED6FA0 /* initial.ld in Resources */ = {isa = PBXBuildFile; fileRef = 9CFF351B1C212D7000ED6FA0 /* initial.ld */; settings = {ASSET_TAGS = (); }; };
+		9CFF351E1C212D7000ED6FA0 /* initial.ld in Resources */ = {isa = PBXBuildFile; fileRef = 9CFF351B1C212D7000ED6FA0 /* initial.ld */; settings = {ASSET_TAGS = (); }; };
+		9CFF351F1C212D7000ED6FA0 /* many.ld in Resources */ = {isa = PBXBuildFile; fileRef = 9CFF351C1C212D7000ED6FA0 /* many.ld */; settings = {ASSET_TAGS = (); }; };
+		9CFF35201C212D7000ED6FA0 /* many.ld in Resources */ = {isa = PBXBuildFile; fileRef = 9CFF351C1C212D7000ED6FA0 /* many.ld */; settings = {ASSET_TAGS = (); }; };
+		9CFF35231C212DB700ED6FA0 /* LCD_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CFF35221C212DB700ED6FA0 /* LCD_Solid.ttf */; settings = {ASSET_TAGS = (); }; };
+		9CFF35241C212DB700ED6FA0 /* LCD_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CFF35221C212DB700ED6FA0 /* LCD_Solid.ttf */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,11 +66,7 @@
 		9C1C707D1BD3FFCE00087DD0 /* LDMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDMap.swift; path = LunarDrop/LDMap.swift; sourceTree = "<group>"; };
 		9C270BD81BC203DA0030CC73 /* LDScrollableWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDScrollableWorld.swift; path = LunarDrop/LDScrollableWorld.swift; sourceTree = "<group>"; };
 		9C295B141C1273F30086ACFF /* LDTextBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDTextBox.swift; path = LunarDrop/LDTextBox.swift; sourceTree = "<group>"; };
-		9C295B171C1285860086ACFF /* LCD_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LCD_Solid.ttf; sourceTree = "<group>"; };
-		9C2D983C1C06EA54008526C5 /* many.ld */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = many.ld; sourceTree = "<group>"; };
 		9C5F9F681BBF5FFB00F8A645 /* LDTimeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDTimeSlider.swift; path = LunarDrop/LDTimeSlider.swift; sourceTree = "<group>"; };
-		9C6215621BFAE71F00767CEC /* LDBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDBackground.swift; sourceTree = "<group>"; };
-		9C75B18B1C00E15600DF10C8 /* initial.ld */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = initial.ld; sourceTree = "<group>"; };
 		9C9786041BBCB495006646A6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = LunarDrop/Constants.swift; sourceTree = "<group>"; };
 		9CA33F811BBBA31E00D82255 /* LDCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDCharacter.swift; path = LunarDrop/LDCharacter.swift; sourceTree = "<group>"; };
 		9CB8ACE81BD4360800C60ECD /* LDSyncedCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDSyncedCharacter.swift; path = LunarDrop/LDSyncedCharacter.swift; sourceTree = "<group>"; };
@@ -86,6 +82,10 @@
 		9CF77FC31BBB9035003C739F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = LunarDrop/Assets.xcassets; sourceTree = "<group>"; };
 		9CF77FC61BBB9035003C739F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9CF77FC81BBB9035003C739F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CFF35181C212D2F00ED6FA0 /* LDBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDBackground.swift; path = LunarDrop/LDBackground.swift; sourceTree = "<group>"; };
+		9CFF351B1C212D7000ED6FA0 /* initial.ld */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = initial.ld; path = LunarDrop/Maps/initial.ld; sourceTree = "<group>"; };
+		9CFF351C1C212D7000ED6FA0 /* many.ld */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = many.ld; path = LunarDrop/Maps/many.ld; sourceTree = "<group>"; };
+		9CFF35221C212DB700ED6FA0 /* LCD_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LCD_Solid.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +112,11 @@
 				9C270BD81BC203DA0030CC73 /* LDScrollableWorld.swift */,
 				9CF77FC31BBB9035003C739F /* Assets.xcassets */,
 				9CF77FBF1BBB9035003C739F /* GameScene.swift */,
+				9CFF35181C212D2F00ED6FA0 /* LDBackground.swift */,
 				9CA33F811BBBA31E00D82255 /* LDCharacter.swift */,
 				9C19D22E1BBCDC7E00863228 /* LDControllableCharacter.swift */,
 				9CB8ACE81BD4360800C60ECD /* LDSyncedCharacter.swift */,
+				9CFF35211C212DB700ED6FA0 /* Fonts */,
 				9C1C70791BD319A500087DD0 /* Maps */,
 				9CF77FC11BBB9035003C739F /* GameScene.sks */,
 				9C9786041BBCB495006646A6 /* Constants.swift */,
@@ -122,10 +124,8 @@
 				9C155D711BC074E700C74FD7 /* LDOnScreenJoystick.swift */,
 				9C155D741BC074FF00C74FD7 /* LDSpriteNode.swift */,
 				9C155D7A1BC089FF00C74FD7 /* LDScene.swift */,
-				9C295B171C1285860086ACFF /* LCD_Solid.ttf */,
 				9C1C707D1BD3FFCE00087DD0 /* LDMap.swift */,
 				9C10FF1A1BF452F60070A2A1 /* LDBar.swift */,
-				9C6215621BFAE71F00767CEC /* LDBackground.swift */,
 				9C295B141C1273F30086ACFF /* LDTextBox.swift */,
 			);
 			name = LunarDrop;
@@ -134,8 +134,8 @@
 		9C1C70791BD319A500087DD0 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				9C75B18B1C00E15600DF10C8 /* initial.ld */,
-				9C2D983C1C06EA54008526C5 /* many.ld */,
+				9CFF351B1C212D7000ED6FA0 /* initial.ld */,
+				9CFF351C1C212D7000ED6FA0 /* many.ld */,
 				9C1C707A1BD319DD00087DD0 /* swirl.ld */,
 			);
 			name = Maps;
@@ -180,6 +180,15 @@
 				9CF77FC81BBB9035003C739F /* Info.plist */,
 			);
 			path = LunarDropMac;
+			sourceTree = "<group>";
+		};
+		9CFF35211C212DB700ED6FA0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9CFF35221C212DB700ED6FA0 /* LCD_Solid.ttf */,
+			);
+			name = Fonts;
+			path = LunarDrop/Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,11 +272,11 @@
 			files = (
 				9C1C707C1BD319DD00087DD0 /* swirl.ld in Resources */,
 				9C155D681BC0648600C74FD7 /* Assets.xcassets in Resources */,
+				9CFF35201C212D7000ED6FA0 /* many.ld in Resources */,
 				9C155D691BC0648600C74FD7 /* GameScene.sks in Resources */,
-				9C75B18D1C00E15600DF10C8 /* initial.ld in Resources */,
-				9C2D983E1C06EA54008526C5 /* many.ld in Resources */,
+				9CFF351E1C212D7000ED6FA0 /* initial.ld in Resources */,
 				9CE36B681BC04985009842E8 /* LaunchScreen.storyboard in Resources */,
-				9C295B191C1285860086ACFF /* LCD_Solid.ttf in Resources */,
+				9CFF35241C212DB700ED6FA0 /* LCD_Solid.ttf in Resources */,
 				9CE36B631BC04985009842E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,13 +285,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CFF351F1C212D7000ED6FA0 /* many.ld in Resources */,
 				9CF77FC41BBB9035003C739F /* Assets.xcassets in Resources */,
-				9C75B18C1C00E15600DF10C8 /* initial.ld in Resources */,
-				9C2D983D1C06EA54008526C5 /* many.ld in Resources */,
+				9CFF351D1C212D7000ED6FA0 /* initial.ld in Resources */,
 				9CF77FC21BBB9035003C739F /* GameScene.sks in Resources */,
 				9C1C707B1BD319DD00087DD0 /* swirl.ld in Resources */,
 				9CF77FC71BBB9035003C739F /* MainMenu.xib in Resources */,
-				9C295B181C1285860086ACFF /* LCD_Solid.ttf in Resources */,
+				9CFF35231C212DB700ED6FA0 /* LCD_Solid.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +306,6 @@
 				9C1C707F1BD3FFCE00087DD0 /* LDMap.swift in Sources */,
 				9C155D7C1BC08BF600C74FD7 /* LDScene.swift in Sources */,
 				9C155D731BC074E700C74FD7 /* LDOnScreenJoystick.swift in Sources */,
-				9C6215641BFAE71F00767CEC /* LDBackground.swift in Sources */,
 				9C155D6A1BC064BB00C74FD7 /* GameScene.swift in Sources */,
 				9C155D6B1BC064BB00C74FD7 /* LDCharacter.swift in Sources */,
 				9C155D6C1BC064BB00C74FD7 /* LDControllableCharacter.swift in Sources */,
@@ -309,6 +317,7 @@
 				9C10FF1C1BF452F60070A2A1 /* LDBar.swift in Sources */,
 				9C155D671BC0638D00C74FD7 /* GameViewController.swift in Sources */,
 				9CE36B5A1BC04985009842E8 /* AppDelegate.swift in Sources */,
+				9CFF351A1C212D2F00ED6FA0 /* LDBackground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,9 +335,9 @@
 				9CB8ACE91BD4360800C60ECD /* LDSyncedCharacter.swift in Sources */,
 				9C19D22F1BBCDC7E00863228 /* LDControllableCharacter.swift in Sources */,
 				9C9786051BBCB495006646A6 /* Constants.swift in Sources */,
-				9C6215631BFAE71F00767CEC /* LDBackground.swift in Sources */,
 				9C155D721BC074E700C74FD7 /* LDOnScreenJoystick.swift in Sources */,
 				9C155D7B1BC089FF00C74FD7 /* LDScene.swift in Sources */,
+				9CFF35191C212D2F00ED6FA0 /* LDBackground.swift in Sources */,
 				9C5F9F691BBF5FFB00F8A645 /* LDTimeSlider.swift in Sources */,
 				9C270BD91BC203DA0030CC73 /* LDScrollableWorld.swift in Sources */,
 			);
