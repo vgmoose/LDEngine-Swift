@@ -43,7 +43,7 @@ class LDControllableCharacter : LDCharacter
         xDelta += (keys.contains(RIGHT_KEYCODE)) ?  mySpeed : 0
         yDelta += (keys.contains( DOWN_KEYCODE)) ? -mySpeed : 0
         yDelta += (keys.contains(   UP_KEYCODE)) ?  mySpeed : 0
-        
+                
         let actualMovement = move((xDelta, yDelta))
         if (world != nil)
         {

@@ -17,7 +17,7 @@ class GameScene: LDScene {
     var joystick = LDOnScreenJoystick()
     var slider: LDTimeSlider?
     var textbox: LDTextBox?
-    let timeIsFlowing = true
+    var timeIsFlowing = true
     
     override func didMoveToView(view: SKView)
     {
@@ -77,11 +77,13 @@ class GameScene: LDScene {
     override func buttonDown(key: Int)
     {
         playerSprite.buttonDown(key)
+        textbox!.buttonDown(key)
     }
     
     override func buttonUp(key: Int)
     {
         playerSprite.buttonUp(key)
+        textbox!.buttonUp(key)
     }
     
     override func update(currentTime: CFTimeInterval)
@@ -90,7 +92,6 @@ class GameScene: LDScene {
         {
             /* Called before each frame is rendered */
             slider!.tick()
-            self.textbox!.churn()
 
         } else
         {

@@ -280,11 +280,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LunarDrop/LDTextBox.swift"
-            timestampString = "471845031.577608"
+            timestampString = "472963217.009648"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
             landmarkName = "LDTextBox"
             landmarkType = "3">
          </BreakpointContent>
@@ -296,12 +296,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LunarDrop/LDTextBox.swift"
-            timestampString = "471845031.577608"
+            timestampString = "472963217.009648"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "applyFormatting(_:)"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "reset(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LunarDrop/LDTextBox.swift"
+            timestampString = "472963217.009648"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "init(scene:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
