@@ -12,7 +12,7 @@ import SpriteKit
 class LDSyncedCharacter : LDCharacter
 {
     var sched: NSDictionary?
-    var sched_keys: NSArray?
+    var sched_keys: [Int]?
     var myName: String?
     var slider: LDTimeSlider?
     var currentKey: Int = -1
@@ -22,7 +22,7 @@ class LDSyncedCharacter : LDCharacter
         super.init(name: "Link")
     }
     
-    func getPos(time: Int) -> (CGPoint)
+    func getPos(_ time: Int) -> (CGPoint)
     {
         if self.sched_keys!.count > currentKey + 1
         {
@@ -53,7 +53,7 @@ class LDSyncedCharacter : LDCharacter
             // no future keyframes
             // get difference for last position
             
-            let lastTimeKey: String = String(self.sched_keys!.lastObject as! Int)
+            let lastTimeKey: String = String(self.sched_keys!.last as! Int)
             
             let nx = (((self.sched![lastTimeKey] as! NSDictionary)["x"] as! Int) - (slider!.map.width/2))  * slider!.map.width
             let ny = -1*((((self.sched![lastTimeKey] as! NSDictionary)["y"] as! Int) - (slider!.map.height/2)) * slider!.map.height)
@@ -78,7 +78,7 @@ class LDSyncedCharacter : LDCharacter
 //        print(self.position.x, self.position.y)
     }
     
-    func updateCurrentKeyIfNeeded(time: Int)
+    func updateCurrentKeyIfNeeded(_ time: Int)
     {
 
         // update for future
@@ -99,8 +99,9 @@ class LDSyncedCharacter : LDCharacter
     func indexKeys()
     {
         // read schedule times (integer keys) from JSON
-        self.sched_keys = self.sched!.allKeys.map({(x:AnyObject) -> Int in (x as! NSString).integerValue})
-        self.sched_keys = (self.sched_keys! as! [Int]).sort()
+        let keys = self.sched!.allKeys as! [String]
+        self.sched_keys = keys.map{ Int($0) ?? 0 }
+        self.sched_keys!.sort()
     }
 
     required init(name charName: String) {

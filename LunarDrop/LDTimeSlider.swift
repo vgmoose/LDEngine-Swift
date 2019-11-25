@@ -28,7 +28,7 @@ class LDTimeSlider : LDSpriteNode
         // time bars
         self.timebar = LDBar(size: CGSize(width: canvas.size.width, height: 50), position: CGPoint(x: canvas.size.width/2, y:0))
 
-        super.init(initWithTexture: texture, color: UIColor.redColor(), size: CGSize(width: 0, height: 0))
+        super.init(initWithTexture: texture, color: UIColor.red, size: CGSize(width: 0, height: 0))
         
         self.timebar.slider = self
                 
@@ -65,7 +65,7 @@ class LDTimeSlider : LDSpriteNode
         warpTime(time + 1)
     }
     
-    func warpTime(newTime:Int)
+    func warpTime(_ newTime:Int)
     {
         if (newTime - time > 1)
         {

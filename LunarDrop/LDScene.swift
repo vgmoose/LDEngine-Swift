@@ -32,38 +32,38 @@ class LDScene : SKScene
         touchEnd(CGPoint(x:0, y:0))
     }
     #else
-    override func keyDown(event : NSEvent)
+    override func keyDown(with event : NSEvent)
     {
         buttonDown(Int(event.keyCode))
     }
     
-    override func keyUp(event : NSEvent)
+    override func keyUp(with event : NSEvent)
     {
         buttonUp(Int(event.keyCode))
     }
     
-    override func mouseDown(event : NSEvent)
+    override func mouseDown(with event : NSEvent)
     {
-        touchStart(event.locationInNode(self))
+        touchStart(event.location(in: self))
     }
     
-    override func mouseDragged(event : NSEvent)
+    override func mouseDragged(with event : NSEvent)
     {
-        touchDrag(event.locationInNode(self))
+        touchDrag(event.location(in: self))
     }
     
-    override func mouseUp(event : NSEvent)
+    override func mouseUp(with event : NSEvent)
     {
-        touchEnd(event.locationInNode(self))
+        touchEnd(event.location(in: self))
     }
     #endif    
     
     // Button listeners
-    func buttonDown(key : Int) {}
-    func buttonUp(key : Int) {}
+    func buttonDown(_ key : Int) {}
+    func buttonUp(_ key : Int) {}
     
     // touch listeners
-    func touchStart(location : CGPoint) {}
-    func touchDrag(location : CGPoint) {}
-    func touchEnd(location : CGPoint) {}
+    func touchStart(_ location : CGPoint) {}
+    func touchDrag(_ location : CGPoint) {}
+    func touchEnd(_ location : CGPoint) {}
 }

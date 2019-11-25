@@ -25,7 +25,7 @@ class LDTextBox : LDSpriteNode
         target = "Hello there this is a long sentence and everybody can read how long this sentence is and now there's more to this sentence okay. Yep. But the sentence doesn't have to stop there. It can go on forever and ever. These words are unending and they will never stop. They shall continue and continue until they can't continue any longer. At that moment, it will all become painstakenly clear about the state and status of things and places and people and all of the above."
 //        target = "Here are more words and text that should be processed and if it is not processed then we are most likely going to run into a real and sincere problem!"
         
-        super.init(initWithTexture: nil, color: UIColor.redColor(), size: CGSize(width:10, height: 10))
+        super.init(initWithTexture: nil, color: UIColor.red, size: CGSize(width:10, height: 10))
         self.anchorPoint = CGPoint(x: 0, y: 0)
         self.position = CGPoint(x:0, y:50)
 
@@ -44,17 +44,17 @@ class LDTextBox : LDSpriteNode
         churnCounter = 0
     }
     
-    func applyFormatting(fields: Array<SKLabelNode>)
+    func applyFormatting(_ fields: Array<SKLabelNode>)
     {
         var count:Int = 0
         
         for label:SKLabelNode in fields
         {
             label.fontSize = CGFloat(fontSize)
-            label.fontColor = UIColor.whiteColor()
+            label.fontColor = UIColor.white
             label.position = CGPoint(x:0, y:fontSize*CGFloat(fields.count-1) - CGFloat(count)*fontSize)
             label.fontName = "LCD Solid"
-            label.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.Left
+            label.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.left
             
             count += 1
             self.addChild(label)
@@ -109,7 +109,7 @@ class LDTextBox : LDSpriteNode
         }
     }
     
-    func buttonDown(key: Int)
+    func buttonDown(_ key: Int)
     {
         if key == A_KEYCODE
         {
@@ -120,7 +120,7 @@ class LDTextBox : LDSpriteNode
         }
     }
     
-    func buttonUp(key: Int)
+    func buttonUp(_ key: Int)
     {
         
     }

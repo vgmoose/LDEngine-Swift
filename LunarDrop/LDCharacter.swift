@@ -23,13 +23,13 @@ class LDCharacter : LDSpriteNode
         charAtlas = SKTextureAtlas(named: charName)
         
         let texture = charAtlas.textureNamed("down_1")
-        super.init(initWithTexture: texture, color: UIColor.whiteColor(), size: texture.size())
+        super.init(initWithTexture: texture, color: UIColor.white, size: texture.size())
         
         if DEBUG
         {
             let border = SKShapeNode()
-            border.path = CGPathCreateWithRoundedRect(CGRect(origin: CGPoint(x:-16, y:-16), size: self.size), 0, 0, nil)
-            border.strokeColor = UIColor.blackColor()
+            border.path = CGPath(roundedRect: CGRect(origin: CGPoint(x:-16, y:-16), size: self.size), cornerWidth: 0, cornerHeight: 0, transform: nil)
+            border.strokeColor = UIColor.black
             self.addChild(border)
         }
     }
@@ -43,7 +43,7 @@ class LDCharacter : LDSpriteNode
 //        
 //    }
     
-    func move(moveMatrix: (CGFloat, CGFloat))  -> (CGFloat, CGFloat)
+    func move(_ moveMatrix: (CGFloat, CGFloat))  -> (CGFloat, CGFloat)
     {
         
         let xDelta = moveMatrix.0
@@ -64,7 +64,7 @@ class LDCharacter : LDSpriteNode
                 let char = node as? LDCharacter
                 if char == nil { continue }
                 
-                if self.intersectsNode(char!)
+                if self.intersects(char!)
                 {
                     let    upDist = abs(char!.down()  - self.up()   )
                     let  downDist = abs(char!.up()    - self.down() )

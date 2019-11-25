@@ -20,10 +20,10 @@ class LDOnScreenJoystick : LDSpriteNode
     init()
     {
         let texture = SKTexture(imageNamed: "circle")
-        super.init(initWithTexture: texture, color: UIColor.whiteColor(), size: CGSize(width:0, height: 0))
-        self.hidden = true
+        super.init(initWithTexture: texture, color: UIColor.white, size: CGSize(width:0, height: 0))
+        self.isHidden = true
         
-        self.stick.strokeColor = SKColor.redColor()
+        self.stick.strokeColor = SKColor.red
         self.addChild(stick)
     }
 
@@ -31,10 +31,10 @@ class LDOnScreenJoystick : LDSpriteNode
         fatalError("init(coder:) has not been implemented")
     }
     
-    func start(location: CGPoint)
+    func start(_ location: CGPoint)
     {
         touchCoors = location
-        self.hidden = false
+        self.isHidden = false
         self.position = location
     }
     
@@ -65,23 +65,23 @@ class LDOnScreenJoystick : LDSpriteNode
         self.player!.world.pan((xDelta, yDelta))
     }
     
-    func move(pos: CGPoint)
+    func move(_ pos: CGPoint)
     {
         isTouchDown = true
         lastKnownTouchedPosition = pos
         
         if #available(OSX 10.10, *)
         {
-            let pathToDraw:CGMutablePathRef = CGPathCreateMutable()
-            CGPathMoveToPoint(pathToDraw, nil, 0, 0)
-            CGPathAddLineToPoint(pathToDraw, nil, pos.x - self.position.x, pos.y - self.position.y)
+            let pathToDraw:CGMutablePath = CGMutablePath()
+            pathToDraw.move(to: CGPoint(x: 0, y: 0))
+            pathToDraw.move(to: CGPoint(x: pos.x - self.position.x, y: pos.y - self.position.y))
             self.stick.path = pathToDraw
         }
     }
 
-    func release(pos: CGPoint)
+    func release(_ pos: CGPoint)
     {
         isTouchDown = false
-        self.hidden = true
+        self.isHidden = true
     }
 }

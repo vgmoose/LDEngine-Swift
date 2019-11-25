@@ -14,7 +14,7 @@ class LDControllableCharacter : LDCharacter
     var mySpeed: CGFloat = 1
     var keys:[Int] = []
     
-    func buttonDown(key: Int)
+    func buttonDown(_ key: Int)
     {
         if (!keys.contains(key))
         {
@@ -22,15 +22,17 @@ class LDControllableCharacter : LDCharacter
         }
     }
     
-    func buttonUp(key: Int)
+    func buttonUp(_ key: Int)
     {
         if (keys.contains(key))
         {
-            keys.removeAtIndex(keys.indexOf(key)!)
+            if let val = keys.index(of: key) {
+                keys.remove(at: val)
+            }
         }
     }
     
-    override func touchStart(location: CGPoint)
+    override func touchStart(_ location: CGPoint)
     {
         print("You clicked on this character at ",location)
     }

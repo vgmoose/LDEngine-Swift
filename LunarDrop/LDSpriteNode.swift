@@ -25,24 +25,24 @@ class LDSpriteNode : SKSpriteNode
         touchEnd(touches.first!.locationInNode(self))
     }
     #else
-    override func mouseDown(event : NSEvent)
+    override func mouseDown(with event : NSEvent)
     {
-        touchStart(event.locationInNode(self))
+        touchStart(event.location(in: self))
     }
-    override func mouseMoved(event : NSEvent)
+    override func mouseMoved(with event : NSEvent)
     {
-        touchDrag(event.locationInNode(self))
+        touchDrag(event.location(in: self))
     }
-    override func mouseUp(event : NSEvent)
+    override func mouseUp(with event : NSEvent)
     {
-        touchEnd(event.locationInNode(self))
+        touchEnd(event.location(in: self))
     }
     #endif
     
     init(initWithTexture texture : SKTexture?, color: UIColor, size: CGSize)
     {
         super.init(texture: texture, color: color, size: size)
-        self.userInteractionEnabled = true;
+        self.isUserInteractionEnabled = true;
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -50,8 +50,8 @@ class LDSpriteNode : SKSpriteNode
     }
     
     // touch listeners
-    func touchStart(location : CGPoint) {}
-    func touchDrag(location : CGPoint) {}
-    func touchEnd(location : CGPoint) {}
+    func touchStart(_ location : CGPoint) {}
+    func touchDrag(_ location : CGPoint) {}
+    func touchEnd(_ location : CGPoint) {}
 
 }

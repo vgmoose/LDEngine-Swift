@@ -19,14 +19,14 @@ class GameScene: LDScene {
     var textbox: LDTextBox?
     var timeIsFlowing = true
     
-    override func didMoveToView(view: SKView)
+    override func didMove(to view: SKView)
     {
         // world setup
-        world.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
+        world.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
         world.container = self.frame
         
         // setup time slider
-        self.slider = LDTimeSlider(world: world, mapFileName: "initial", canvas: self)
+        self.slider = LDTimeSlider(world: world, mapFileName: "test", canvas: self)
         self.addChild(self.slider!)
         
         // setup text box
@@ -59,34 +59,34 @@ class GameScene: LDScene {
 //        dummy.direction = "right"
     }
     
-    override func touchStart(location: CGPoint)
+    override func touchStart(_ location: CGPoint)
     {
         joystick.start(location)
     }
     
-    override func touchDrag(location: CGPoint)
+    override func touchDrag(_ location: CGPoint)
     {
         joystick.move(location)
     }
     
-    override func touchEnd(location: CGPoint)
+    override func touchEnd(_ location: CGPoint)
     {
         joystick.release(location)
     }
     
-    override func buttonDown(key: Int)
+    override func buttonDown(_ key: Int)
     {
         playerSprite.buttonDown(key)
         textbox!.buttonDown(key)
     }
     
-    override func buttonUp(key: Int)
+    override func buttonUp(_ key: Int)
     {
         playerSprite.buttonUp(key)
         textbox!.buttonUp(key)
     }
     
-    override func update(currentTime: CFTimeInterval)
+    override func update(_ currentTime: CFTimeInterval)
     {
         if (self.timeIsFlowing)
         {

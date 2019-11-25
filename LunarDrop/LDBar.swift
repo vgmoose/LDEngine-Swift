@@ -16,9 +16,9 @@ class LDBar : LDSpriteNode
     
     init(size: CGSize, position: CGPoint)
     {
-        self.overlay = SKSpriteNode(texture: nil, color: UIColor.redColor(), size: size)
+        self.overlay = SKSpriteNode(texture: nil, color: UIColor.red, size: size)
         
-        super.init(initWithTexture: nil, color: UIColor.greenColor(), size: size)
+        super.init(initWithTexture: nil, color: UIColor.green, size: size)
         self.position = position
         self.overlay.anchorPoint = CGPoint(x: 0, y: 0.5)
         self.overlay.position.x = -self.size.width/2
@@ -30,13 +30,13 @@ class LDBar : LDSpriteNode
         
     }
     
-    override func touchStart(location: CGPoint)
+    override func touchStart(_ location: CGPoint)
     {
         print("TRYING TO WARP TIME")
         self.slider!.warpTime( Int(((location.x + self.size.width/2) / self.size.width)*1440) )
     }
     
-    func set(percent: CGFloat)
+    func set(_ percent: CGFloat)
     {
         self.overlay.size.width = self.size.width*percent
     }

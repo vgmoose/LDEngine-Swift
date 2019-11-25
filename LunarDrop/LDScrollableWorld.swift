@@ -13,7 +13,7 @@ class LDScrollableWorld : SKNode
 {
     var container: CGRect?
         
-    func pan(moveMatrix: (CGFloat, CGFloat))
+    func pan(_ moveMatrix: (CGFloat, CGFloat))
     {
         let xDelta = moveMatrix.0
         let yDelta = moveMatrix.1
@@ -25,10 +25,10 @@ class LDScrollableWorld : SKNode
         
     }
     
-    func x() -> CGFloat { return CGRectGetMidX(self.container!) }
-    func y() -> CGFloat { return CGRectGetMidY(self.container!) }
+    func x() -> CGFloat { return self.container!.midX }
+    func y() -> CGFloat { return self.container!.midY }
     
-    func snap(char: LDCharacter)
+    func snap(_ char: LDCharacter)
     {
         self.position.x = -char.position.x + x()
         self.position.y = -char.position.y + y()
